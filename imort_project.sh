@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-export PATH=$PATH:/opt/electriccloud/electriccommander/bin
+export PATH=$PATH:/opt/cloudbees/sda/bin
 
 ectool login admin changeme
 
