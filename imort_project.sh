@@ -1,8 +1,24 @@
 #!/bin/bash -ex
 
+#---------------------------------------------------------------
+#  Getting input parameters
+#---------------------------------------------------------------
+while getopts s: flag
+do
+    case "${flag}" in 
+	      s) server=${OPTARG};; 
+    esac
+done
+ 
+if [ -z "$server" ]; then
+    echo '[Error] Please put a server host information.'
+    exit 1 
+fi
+
+
 export PATH=$PATH:/opt/cloudbees/sda/bin
 
-ectool login admin changeme
+ectool login --remote $server admin changeme
 
 if [ ! -f /tmp/project_import_ready ]; then
   echo "Import Projects"
