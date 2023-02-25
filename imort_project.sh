@@ -15,7 +15,7 @@ fi
 
 export PATH=$PATH:/opt/cloudbees/sda/bin
 
-ectool --remote $server login admin changeme
+ectool --server $server login admin changeme
 
 if [ ! -f /tmp/project_import_ready ]; then
   echo "Import Projects"
