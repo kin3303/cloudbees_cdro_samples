@@ -1,8 +1,5 @@
 #!/bin/bash -ex
 
-#---------------------------------------------------------------
-#  Getting input parameters
-#---------------------------------------------------------------
 while getopts s: flag
 do
     case "${flag}" in 
@@ -18,7 +15,7 @@ fi
 
 export PATH=$PATH:/opt/cloudbees/sda/bin
 
-ectool login --remote $server admin changeme
+ectool --remote $server login admin changeme
 
 if [ ! -f /tmp/project_import_ready ]; then
   echo "Import Projects"
