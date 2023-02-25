@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<exportedData version="96" buildLabel="build_main_142654_2020.06.25_02:11:48" buildVersion="10.0.0.142654" passkey="b734f8f6603c3a6ac13414c5b07fbf1a6583446a">
+<exportedData version="107" buildLabel="build_10.4_153852_2022.03.22_08:16:02" buildVersion="10.4.2.153852" passkey="b75a41350dcb9e41394fb17fb6ffa8407f5872b0">
   <exportPath>/projects/CO_Functions</exportPath>
   <project>
     <projectName>CO_Functions</projectName>
@@ -1852,14 +1852,151 @@
           <inheriting>1</inheriting>
           <tracked>1</tracked>
         </acl>
+        <property>
+          <propertyName>ec_customEditorData</propertyName>
+          <tracked>1</tracked>
+          <propertySheet>
+            <credentialProtected>0</credentialProtected>
+            <tracked>1</tracked>
+            <acl>
+              <inheriting>1</inheriting>
+              <tracked>1</tracked>
+            </acl>
+            <property>
+              <propertyName>parameters</propertyName>
+              <tracked>1</tracked>
+              <propertySheet>
+                <credentialProtected>0</credentialProtected>
+                <tracked>1</tracked>
+                <acl>
+                  <inheriting>1</inheriting>
+                  <tracked>1</tracked>
+                </acl>
+                <property>
+                  <propertyName>backup_location</propertyName>
+                  <tracked>1</tracked>
+                  <propertySheet>
+                    <credentialProtected>0</credentialProtected>
+                    <tracked>1</tracked>
+                    <acl>
+                      <inheriting>1</inheriting>
+                      <tracked>1</tracked>
+                    </acl>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <suppressValueTracking>0</suppressValueTracking>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                <property>
+                  <propertyName>loc</propertyName>
+                  <tracked>1</tracked>
+                  <propertySheet>
+                    <credentialProtected>0</credentialProtected>
+                    <tracked>1</tracked>
+                    <acl>
+                      <inheriting>1</inheriting>
+                      <tracked>1</tracked>
+                    </acl>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <suppressValueTracking>0</suppressValueTracking>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                <property>
+                  <propertyName>res</propertyName>
+                  <tracked>1</tracked>
+                  <propertySheet>
+                    <credentialProtected>0</credentialProtected>
+                    <tracked>1</tracked>
+                    <acl>
+                      <inheriting>1</inheriting>
+                      <tracked>1</tracked>
+                    </acl>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <suppressValueTracking>0</suppressValueTracking>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                <property>
+                  <propertyName>resource_name</propertyName>
+                  <tracked>1</tracked>
+                  <propertySheet>
+                    <credentialProtected>0</credentialProtected>
+                    <tracked>1</tracked>
+                    <acl>
+                      <inheriting>1</inheriting>
+                      <tracked>1</tracked>
+                    </acl>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <suppressValueTracking>0</suppressValueTracking>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                <property>
+                  <propertyName>server</propertyName>
+                  <tracked>1</tracked>
+                  <propertySheet>
+                    <credentialProtected>0</credentialProtected>
+                    <tracked>1</tracked>
+                    <acl>
+                      <inheriting>1</inheriting>
+                      <tracked>1</tracked>
+                    </acl>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <suppressValueTracking>0</suppressValueTracking>
+                      <tracked>1</tracked>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+              </propertySheet>
+            </property>
+          </propertySheet>
+        </property>
       </propertySheet>
+      <formalParameter>
+        <formalParameterName>loc</formalParameterName>
+        <defaultValue>/home/ubuntu/projectBackup</defaultValue>
+        <description></description>
+        <expansionDeferred>0</expansionDeferred>
+        <required>1</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
+      <formalParameter>
+        <formalParameterName>res</formalParameterName>
+        <defaultValue>local</defaultValue>
+        <description></description>
+        <expansionDeferred>0</expansionDeferred>
+        <required>0</required>
+        <tracked>1</tracked>
+        <type>entry</type>
+      </formalParameter>
       <step>
         <stepName>backup</stepName>
         <alwaysRun>0</alwaysRun>
         <broadcast>0</broadcast>
-        <command>rm -rf /tmp/scripts/CO_WEB_DEMO.xml&#10;rm -rf /tmp/scripts/CO_SIMPLE_ROLLBACK_APP.xml&#10;rm -rf /tmp/scripts/CO_RELEASE_DESIGN_DEMO.xml&#10;rm -rf /tmp/scripts/CO_WEB_DEMO.xml&#10;rm -rf /tmp/scripts/Z_Test.xml&#10;rm -rf /tmp/scripts/DDI.xml&#10;rm -rf /tmp/scripts/Release_Demo_3.0.xml&#10;&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/CO_Functions.xml --path "/projects/CO_Functions"  --relocatable 1 --withAcls 1 --withNotifiers 1&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/DDI.xml --path "/projects/DDI"  --relocatable 1 --withAcls 1 --withNotifiers 1&#10;&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/CO_WEB_DEMO.xml --path "/projects/CO_WEB_DEMO"  --relocatable 1 --withAcls 1 --withNotifiers 1&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/CO_SIMPLE_ROLLBACK_APP.xml --path "/projects/CO_SIMPLE_ROLLBACK_APP"  --relocatable 1 --withAcls 1 --withNotifiers 1&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/CO_RELEASE_DESIGN_DEMO.xml --path "/projects/CO_RELEASE_DESIGN_DEMO"  --relocatable 1 --withAcls 1 --withNotifiers 1&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/Demo.xml --path "/projects/Demo"  --relocatable 1 --withAcls 1 --withNotifiers 1&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/CO_WEB_DEMO_20210129.xml --path "/projects/CO_WEB_DEMO_20210129"  --relocatable 1 --withAcls 1 --withNotifiers 1&#10;&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/Demo.xml --path "/projects/Demo"  --relocatable 1 --withAcls 1 --withNotifiers 1&#10;/opt/electriccloud/electriccommander/bin/ectool export /tmp/scripts/University.xml --path "/projects/University"  --relocatable 1 --withAcls 1 --withNotifiers 1</command>
+        <command>sudo rm -rf $[loc]&#10;sudo mkdir -p $[loc]&#10;sudo chmod 777 $[loc]&#10; &#10;export PATH=$PATH:/opt/cloudbees/sda/bin&#10;&#10;ectool login admin changeme&#10;&#10;&#10;ectool export $[loc]/CO_Functions.xml           --path '/projects/CO_Functions'            --relocatable 1 --withAcls 1 --withNotifiers 1 --excludeJobs 1 --withVersionNumbers 0 --safeMode none&#10;ectool export $[loc]/CO_WEB_DEMO.xml            --path '/projects/CO_WEB_DEMO'             --relocatable 1 --withAcls 1 --withNotifiers 1 --excludeJobs 1 --withVersionNumbers 0 --safeMode none&#10;ectool export $[loc]/CO_SIMPLE_ROLLBACK_APP.xml --path '/projects/CO_SIMPLE_ROLLBACK_APP'  --relocatable 1 --withAcls 1 --withNotifiers 1 --excludeJobs 1 --withVersionNumbers 0 --safeMode none&#10;ectool export $[loc]/CO_RELEASE_DESIGN_DEMO.xml --path '/projects/CO_RELEASE_DESIGN_DEMO'  --relocatable 1 --withAcls 1 --withNotifiers 1 --excludeJobs 1 --withVersionNumbers 0 --safeMode none&#10;ectool export $[loc]/University.xml             --path '/projects/University'              --relocatable 1 --withAcls 1 --withNotifiers 1 --excludeJobs 1 --withVersionNumbers 0 --safeMode none&#10; &#10;  </command>
         <condition></condition>
-        <description></description>
+        <description>베스천&#10;  scp -i /tmp/devops_tool_key.pem ubuntu@&lt;cdro_server&gt;:/tmp&#10;&#10;CDRO Server&#10;  scp -i /tmp/devops_tool_key.pem ~/projectBackup/* ec2-user@&lt;cdro_agent&gt;:/tmp</description>
         <errorHandling>failProcedure</errorHandling>
         <exclusiveMode>none</exclusiveMode>
         <logFileName></logFileName>
@@ -1867,17 +2004,119 @@
         <postProcessor></postProcessor>
         <precondition></precondition>
         <releaseMode>none</releaseMode>
-        <resourceName></resourceName>
+        <resourceName>$[res]</resourceName>
         <shell></shell>
         <timeLimit></timeLimit>
         <timeLimitUnits>minutes</timeLimitUnits>
         <tracked>1</tracked>
         <workingDirectory></workingDirectory>
+        <workspaceName>default</workspaceName>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>1</tracked>
+        </acl>
+        <propertySheet>
+          <credentialProtected>0</credentialProtected>
+          <tracked>1</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>1</tracked>
+          </acl>
+        </propertySheet>
+      </step>
+      <step>
+        <stepName>publish</stepName>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <parallel>0</parallel>
+        <precondition></precondition>
+        <releaseMode>none</releaseMode>
+        <resourceName>$[res]</resourceName>
+        <subprocedure>Publish</subprocedure>
+        <subproject>/plugins/EC-Artifact/project</subproject>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>1</tracked>
         <workspaceName></workspaceName>
         <acl>
           <inheriting>1</inheriting>
           <tracked>1</tracked>
         </acl>
+        <actualParameters>
+          <credentialProtected>0</credentialProtected>
+          <tracked>1</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>1</tracked>
+          </acl>
+          <property>
+            <propertyName>artifactName</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value>sample:project</value>
+          </property>
+          <property>
+            <propertyName>artifactVersionVersion</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value>1.0.0-$[/increment /server/ec_counters/artifactCounter]</value>
+          </property>
+          <property>
+            <propertyName>compress</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value>1</value>
+          </property>
+          <property>
+            <propertyName>dependentArtifactVersionList</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value></value>
+          </property>
+          <property>
+            <propertyName>excludePatterns</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value></value>
+          </property>
+          <property>
+            <propertyName>followSymlinks</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value>1</value>
+          </property>
+          <property>
+            <propertyName>fromLocation</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value>$[loc]</value>
+          </property>
+          <property>
+            <propertyName>includePatterns</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value>*.xml</value>
+          </property>
+          <property>
+            <propertyName>repositoryName</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>1</tracked>
+            <value>default</value>
+          </property>
+        </actualParameters>
         <propertySheet>
           <credentialProtected>0</credentialProtected>
           <tracked>1</tracked>
@@ -2341,7 +2580,7 @@
         <tracked>1</tracked>
       </acl>
       <deployer>
-        <deployerName>47a14a4c-54ad-11eb-976d-0242ac18000c</deployerName>
+        <deployerName>48900ad1-b4d0-11ed-95b5-024be617296e</deployerName>
         <tracked>1</tracked>
         <acl>
           <inheriting>1</inheriting>
@@ -2377,7 +2616,7 @@
           <tracked>1</tracked>
         </acl>
         <flow>
-          <flowName>47a80116-54ad-11eb-976d-0242ac18000c_pipelineflow</flowName>
+          <flowName>4890a71a-b4d0-11ed-95b5-024be617296e_pipelineflow</flowName>
           <tracked>1</tracked>
           <acl>
             <inheriting>1</inheriting>
@@ -2400,7 +2639,7 @@
             <flowStateType>task</flowStateType>
             <index>0</index>
             <keepOnError>0</keepOnError>
-            <subflow>47c06b61-54ad-11eb-976d-0242ac18000c_pregateflow</subflow>
+            <subflow>489672e8-b4d0-11ed-95b5-024be617296e_pregateflow</subflow>
             <tracked>1</tracked>
             <useApproverAcl>0</useApproverAcl>
             <waitForCompletion>0</waitForCompletion>
@@ -2447,7 +2686,7 @@
             <index>1</index>
             <keepOnError>0</keepOnError>
             <resourceName>local</resourceName>
-            <subflow>47b8ca28-54ad-11eb-976d-0242ac18000c_stageflow</subflow>
+            <subflow>48938d94-b4d0-11ed-95b5-024be617296e_stageflow</subflow>
             <tracked>1</tracked>
             <useApproverAcl>0</useApproverAcl>
             <waitForCompletion>0</waitForCompletion>
@@ -2492,7 +2731,7 @@
             <flowStateType>task</flowStateType>
             <index>2</index>
             <keepOnError>0</keepOnError>
-            <subflow>47c28e49-54ad-11eb-976d-0242ac18000c_postgateflow</subflow>
+            <subflow>48978464-b4d0-11ed-95b5-024be617296e_postgateflow</subflow>
             <tracked>1</tracked>
             <useApproverAcl>0</useApproverAcl>
             <waitForCompletion>0</waitForCompletion>
@@ -2521,7 +2760,7 @@
             <index>3</index>
             <keepOnError>0</keepOnError>
             <resourceName>local</resourceName>
-            <subflow>47cacac5-54ad-11eb-976d-0242ac18000c_stageflow</subflow>
+            <subflow>4899f58e-b4d0-11ed-95b5-024be617296e_stageflow</subflow>
             <tracked>1</tracked>
             <useApproverAcl>0</useApproverAcl>
             <waitForCompletion>0</waitForCompletion>
@@ -2548,7 +2787,7 @@
             <flowStateType>task</flowStateType>
             <index>4</index>
             <keepOnError>0</keepOnError>
-            <subflow>47f00682-54ad-11eb-976d-0242ac18000c_pregateflow</subflow>
+            <subflow>489cdc77-b4d0-11ed-95b5-024be617296e_pregateflow</subflow>
             <tracked>1</tracked>
             <useApproverAcl>0</useApproverAcl>
             <waitForCompletion>0</waitForCompletion>
@@ -2595,7 +2834,7 @@
             <index>5</index>
             <keepOnError>0</keepOnError>
             <resourceName>local</resourceName>
-            <subflow>47e3aa4c-54ad-11eb-976d-0242ac18000c_stageflow</subflow>
+            <subflow>489c8e21-b4d0-11ed-95b5-024be617296e_stageflow</subflow>
             <tracked>1</tracked>
             <useApproverAcl>0</useApproverAcl>
             <waitForCompletion>0</waitForCompletion>
@@ -2624,7 +2863,7 @@
             <index>6</index>
             <keepOnError>0</keepOnError>
             <resourceName>local</resourceName>
-            <subflow>47ff9712-54ad-11eb-976d-0242ac18000c_stageflow</subflow>
+            <subflow>489f4cc2-b4d0-11ed-95b5-024be617296e_stageflow</subflow>
             <tracked>1</tracked>
             <useApproverAcl>0</useApproverAcl>
             <waitForCompletion>0</waitForCompletion>
@@ -2669,7 +2908,7 @@
             <tracked>1</tracked>
           </acl>
           <flow>
-            <flowName>47b8ca28-54ad-11eb-976d-0242ac18000c_stageflow</flowName>
+            <flowName>48938d94-b4d0-11ed-95b5-024be617296e_stageflow</flowName>
             <tracked>1</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -2812,7 +3051,7 @@
             </acl>
           </propertySheet>
           <gate>
-            <gateName>47c06b61-54ad-11eb-976d-0242ac18000c</gateName>
+            <gateName>489672e8-b4d0-11ed-95b5-024be617296e</gateName>
             <flowStateName>fcbd624c-4fef-11eb-9228-0242ac18000c_pre_gate_flow_state</flowStateName>
             <gateType>PRE</gateType>
             <stageName>QA</stageName>
@@ -2822,7 +3061,7 @@
               <tracked>1</tracked>
             </acl>
             <flow>
-              <flowName>47c06b61-54ad-11eb-976d-0242ac18000c_pregateflow</flowName>
+              <flowName>489672e8-b4d0-11ed-95b5-024be617296e_pregateflow</flowName>
               <tracked>1</tracked>
               <acl>
                 <inheriting>1</inheriting>
@@ -2847,7 +3086,7 @@
             </propertySheet>
           </gate>
           <gate>
-            <gateName>47c28e49-54ad-11eb-976d-0242ac18000c</gateName>
+            <gateName>48978464-b4d0-11ed-95b5-024be617296e</gateName>
             <flowStateName>fcd5cc59-4fef-11eb-9228-0242ac18000c_post_gate_flow_state</flowStateName>
             <gateType>POST</gateType>
             <stageName>QA</stageName>
@@ -2857,7 +3096,7 @@
               <tracked>1</tracked>
             </acl>
             <flow>
-              <flowName>47c28e49-54ad-11eb-976d-0242ac18000c_postgateflow</flowName>
+              <flowName>48978464-b4d0-11ed-95b5-024be617296e_postgateflow</flowName>
               <tracked>1</tracked>
               <acl>
                 <inheriting>1</inheriting>
@@ -2912,7 +3151,7 @@
               <taskName>Ensure 75% Passing Tests</taskName>
               <allowOutOfOrderRun>0</allowOutOfOrderRun>
               <flowStateName>fcee3663-4fef-11eb-9228-0242ac18000c_task_flow_state</flowStateName>
-              <gateName>47c28e49-54ad-11eb-976d-0242ac18000c</gateName>
+              <gateName>48978464-b4d0-11ed-95b5-024be617296e</gateName>
               <taskEnabled>1</taskEnabled>
               <taskSkippable>0</taskSkippable>
               <taskType>CONDITIONAL</taskType>
@@ -3009,7 +3248,7 @@
             <tracked>1</tracked>
           </acl>
           <flow>
-            <flowName>47cacac5-54ad-11eb-976d-0242ac18000c_stageflow</flowName>
+            <flowName>4899f58e-b4d0-11ed-95b5-024be617296e_stageflow</flowName>
             <tracked>1</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -3254,6 +3493,19 @@
                     <denyExecute>0</denyExecute>
                     <denyModify>0</denyModify>
                     <denyRead>0</denyRead>
+                    <principalName>admin</principalName>
+                    <principalType>user</principalType>
+                    <tracked>1</tracked>
+                  </aclEntry>
+                  <aclEntry>
+                    <allowChangePermissions>1</allowChangePermissions>
+                    <allowExecute>1</allowExecute>
+                    <allowModify>1</allowModify>
+                    <allowRead>1</allowRead>
+                    <denyChangePermissions>0</denyChangePermissions>
+                    <denyExecute>0</denyExecute>
+                    <denyModify>0</denyModify>
+                    <denyRead>0</denyRead>
                     <principalName>project: EC-Core-1.2.8.2020031701</principalName>
                     <principalType>user</principalType>
                     <tracked>1</tracked>
@@ -3269,11 +3521,23 @@
                 </propertySheet>
                 <eventSubscription>
                   <eventSubscriptionName>group-development</eventSubscriptionName>
-                  <groupName>development</groupName>
                   <tracked>1</tracked>
                   <acl>
                     <inheriting>1</inheriting>
                     <tracked>1</tracked>
+                    <aclEntry>
+                      <allowChangePermissions>1</allowChangePermissions>
+                      <allowExecute>1</allowExecute>
+                      <allowModify>1</allowModify>
+                      <allowRead>1</allowRead>
+                      <denyChangePermissions>0</denyChangePermissions>
+                      <denyExecute>0</denyExecute>
+                      <denyModify>0</denyModify>
+                      <denyRead>0</denyRead>
+                      <principalName>admin</principalName>
+                      <principalType>user</principalType>
+                      <tracked>1</tracked>
+                    </aclEntry>
                   </acl>
                   <propertySheet>
                     <credentialProtected>0</credentialProtected>
@@ -3291,6 +3555,19 @@
                   <acl>
                     <inheriting>1</inheriting>
                     <tracked>1</tracked>
+                    <aclEntry>
+                      <allowChangePermissions>1</allowChangePermissions>
+                      <allowExecute>1</allowExecute>
+                      <allowModify>1</allowModify>
+                      <allowRead>1</allowRead>
+                      <denyChangePermissions>0</denyChangePermissions>
+                      <denyExecute>0</denyExecute>
+                      <denyModify>0</denyModify>
+                      <denyRead>0</denyRead>
+                      <principalName>admin</principalName>
+                      <principalType>user</principalType>
+                      <tracked>1</tracked>
+                    </aclEntry>
                   </acl>
                   <propertySheet>
                     <credentialProtected>0</credentialProtected>
@@ -3341,7 +3618,7 @@
             </acl>
           </propertySheet>
           <gate>
-            <gateName>47db45bc-54ad-11eb-976d-0242ac18000c</gateName>
+            <gateName>489c8df1-b4d0-11ed-95b5-024be617296e</gateName>
             <gateType>PRE</gateType>
             <stageName>Pre-prod</stageName>
             <tracked>1</tracked>
@@ -3359,7 +3636,7 @@
             </propertySheet>
           </gate>
           <gate>
-            <gateName>47dc3020-54ad-11eb-976d-0242ac18000c</gateName>
+            <gateName>489c8df7-b4d0-11ed-95b5-024be617296e</gateName>
             <gateType>POST</gateType>
             <stageName>Pre-prod</stageName>
             <tracked>1</tracked>
@@ -3519,7 +3796,7 @@
             <tracked>1</tracked>
           </acl>
           <flow>
-            <flowName>47e3aa4c-54ad-11eb-976d-0242ac18000c_stageflow</flowName>
+            <flowName>489c8e21-b4d0-11ed-95b5-024be617296e_stageflow</flowName>
             <tracked>1</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -3756,7 +4033,7 @@
             </acl>
           </propertySheet>
           <gate>
-            <gateName>47f00682-54ad-11eb-976d-0242ac18000c</gateName>
+            <gateName>489cdc77-b4d0-11ed-95b5-024be617296e</gateName>
             <flowStateName>ff978450-4fef-11eb-9228-0242ac18000c_pre_gate_flow_state</flowStateName>
             <gateType>PRE</gateType>
             <stageName>Production</stageName>
@@ -3766,7 +4043,7 @@
               <tracked>1</tracked>
             </acl>
             <flow>
-              <flowName>47f00682-54ad-11eb-976d-0242ac18000c_pregateflow</flowName>
+              <flowName>489cdc77-b4d0-11ed-95b5-024be617296e_pregateflow</flowName>
               <tracked>1</tracked>
               <acl>
                 <inheriting>1</inheriting>
@@ -3824,6 +4101,19 @@
                       <denyExecute>0</denyExecute>
                       <denyModify>0</denyModify>
                       <denyRead>0</denyRead>
+                      <principalName>admin</principalName>
+                      <principalType>user</principalType>
+                      <tracked>1</tracked>
+                    </aclEntry>
+                    <aclEntry>
+                      <allowChangePermissions>1</allowChangePermissions>
+                      <allowExecute>1</allowExecute>
+                      <allowModify>1</allowModify>
+                      <allowRead>1</allowRead>
+                      <denyChangePermissions>0</denyChangePermissions>
+                      <denyExecute>0</denyExecute>
+                      <denyModify>0</denyModify>
+                      <denyRead>0</denyRead>
                       <principalName>project: EC-Core-1.2.8.2020031701</principalName>
                       <principalType>user</principalType>
                       <tracked>1</tracked>
@@ -3844,6 +4134,19 @@
                     <acl>
                       <inheriting>1</inheriting>
                       <tracked>1</tracked>
+                      <aclEntry>
+                        <allowChangePermissions>1</allowChangePermissions>
+                        <allowExecute>1</allowExecute>
+                        <allowModify>1</allowModify>
+                        <allowRead>1</allowRead>
+                        <denyChangePermissions>0</denyChangePermissions>
+                        <denyExecute>0</denyExecute>
+                        <denyModify>0</denyModify>
+                        <denyRead>0</denyRead>
+                        <principalName>admin</principalName>
+                        <principalType>user</principalType>
+                        <tracked>1</tracked>
+                      </aclEntry>
                     </acl>
                     <propertySheet>
                       <credentialProtected>0</credentialProtected>
@@ -3869,7 +4172,7 @@
               <taskName>Release Management</taskName>
               <allowOutOfOrderRun>0</allowOutOfOrderRun>
               <flowStateName>ff970f1b-4fef-11eb-9228-0242ac18000c_task_flow_state</flowStateName>
-              <gateName>47f00682-54ad-11eb-976d-0242ac18000c</gateName>
+              <gateName>489cdc77-b4d0-11ed-95b5-024be617296e</gateName>
               <taskApprovers>admin</taskApprovers>
               <taskEnabled>1</taskEnabled>
               <taskSkippable>0</taskSkippable>
@@ -3890,7 +4193,7 @@
             </task>
           </gate>
           <gate>
-            <gateName>47f81cea-54ad-11eb-976d-0242ac18000c</gateName>
+            <gateName>489f258e-b4d0-11ed-95b5-024be617296e</gateName>
             <gateType>POST</gateType>
             <stageName>Production</stageName>
             <tracked>1</tracked>
@@ -4029,7 +4332,7 @@
             <tracked>1</tracked>
           </acl>
           <flow>
-            <flowName>47ff9712-54ad-11eb-976d-0242ac18000c_stageflow</flowName>
+            <flowName>489f4cc2-b4d0-11ed-95b5-024be617296e_stageflow</flowName>
             <tracked>1</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -4142,7 +4445,7 @@
             </acl>
           </propertySheet>
           <gate>
-            <gateName>4807d486-54ad-11eb-976d-0242ac18000c</gateName>
+            <gateName>489f4ce0-b4d0-11ed-95b5-024be617296e</gateName>
             <gateType>PRE</gateType>
             <stageName>Audit Reports</stageName>
             <tracked>1</tracked>
@@ -4160,7 +4463,7 @@
             </propertySheet>
           </gate>
           <gate>
-            <gateName>48090d0a-54ad-11eb-976d-0242ac18000c</gateName>
+            <gateName>489f4ce6-b4d0-11ed-95b5-024be617296e</gateName>
             <gateType>POST</gateType>
             <stageName>Audit Reports</stageName>
             <tracked>1</tracked>
