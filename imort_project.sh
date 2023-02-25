@@ -3,7 +3,7 @@
 while getopts s: flag
 do
     case "${flag}" in 
-	      s) server=${OPTARG};; 
+      s) server=${OPTARG};; 
     esac
 done
  
@@ -12,34 +12,58 @@ if [ -z "$server" ]; then
     exit 1 
 fi
 
-
-export PATH=$PATH:/opt/cloudbees/sda/bin
+export PATH=$PATH:/opt/cloudbees/sda/bin 
 
 ectool --server $server login admin changeme
 
-if [ ! -f /tmp/project_import_ready ]; then
-  echo "Import Projects"
-  sysobjects=("server" "projects" "resources" "artifacts" "repositories" "session" "workspaces")
+echo "Create Sample Resources"
+
+if [ ! -f $PWD/demo_prod_agents_ready ]; then
+  ectool createResource PROD --hostName local
+  ectool pingResource PROD
+  touch $PWD/demo_prod_agents_ready
+fi
+
+if [ ! -f $PWD/demo_dev_agents_ready ]; then
+  ectool createResource DEV --hostName  local 
+  ectool pingResource DEV
+  touch $PWD/demo_dev_agents_ready
+fi
+
+if [ ! -f $PWD/demo_qa_agents_ready ]; then
+  ectool createResource QA --hostName  local 
+  ectool pingResource QA
+  touch $PWD/demo_qa_agents_ready
+fi
+
+echo "Import Projects"
   
+if [ ! -f /tmp/project_import_ready ]; then
+
   for file in $PWD/projects/*.xml; do
     ectool import --file "$file" --force 1
 
     fileName=$(basename "$file")
     projectName=${fileName%.*}
-    for sysobject in "${sysobjects[@]}"
-    do
-       ectool createAclEntry user "project: $projectName" --systemObjectName $sysobject --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow allow"
-    done
+
+    ectool createAclEntry user "project: $projectName" --systemObjectName server --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow
+    ectool createAclEntry user "project: $projectName" --systemObjectName projects --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow
+    ectool createAclEntry user "project: $projectName" --systemObjectName resources --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow
+    ectool createAclEntry user "project: $projectName" --systemObjectName artifacts --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow
+    ectool createAclEntry user "project: $projectName" --systemObjectName repositories --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow
+    ectool createAclEntry user "project: $projectName" --systemObjectName session --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow
+    ectool createAclEntry user "project: $projectName" --systemObjectName workspaces --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow
   done
 
   touch /tmp/project_import_ready
 fi
 
-if [ ! -f /tmp/dsl_import_ready ]; then
-  echo "Import DSL files"
+echo "Import DSL files"
+ 
+if [ ! -f $PWD/dsl_import_ready ]; then
   for file in $PWD/projects/*.groovy; do
     ectool evalDsl --dslFile "$file"
   done
 
-  touch /tmp/dsl_import_ready
+  touch $PWD/dsl_import_ready
 fi
