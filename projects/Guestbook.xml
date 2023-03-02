@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<exportedData version="107" buildLabel="build_10.4_153852_2022.03.22_08:16:02" buildVersion="10.4.2.153852" passkey="8c8ebe216866903c9f227abfd20320d046651421">
+<exportedData version="107" buildLabel="build_10.4_153852_2022.03.22_08:16:02" buildVersion="10.4.2.153852" passkey="4808f1b165a99ecd635c612b976cb3859caabc80">
   <exportPath>/projects/Guestbook</exportPath>
   <project>
     <projectName>Guestbook</projectName>
@@ -117,7 +117,6 @@
       <credentialProviderProjectName>Guestbook</credentialProviderProjectName>
       <credentialType>EXTERNAL</credentialType>
       <description></description>
-      <password></password>
       <secretPath>harbor_cred/password</secretPath>
       <tracked>0</tracked>
       <userName>admin</userName>
@@ -275,5 +274,117 @@
         </acl>
       </propertySheet>
     </pluginConfiguration>
+    <procedure>
+      <procedureName>createEnvs</procedureName>
+      <description></description>
+      <jobNameTemplate></jobNameTemplate>
+      <resourceName>local</resourceName>
+      <timeLimit></timeLimit>
+      <timeLimitUnits>minutes</timeLimitUnits>
+      <tracked>0</tracked>
+      <workspaceName>default</workspaceName>
+      <acl>
+        <inheriting>1</inheriting>
+        <tracked>0</tracked>
+      </acl>
+      <propertySheet>
+        <credentialProtected>0</credentialProtected>
+        <tracked>0</tracked>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
+      </propertySheet>
+      <step>
+        <stepName>createEnvs</stepName>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>def projName  = "$[/myProject/projectName]"&#10;def envs = ["guestbook-dev","guestbook-qa","guestbook-prod"]&#10;def resources = []&#10;def environments = []&#10;&#10;envs.each { env -&gt;&#10;environment env, { &#10;  projectName = projName&#10;&#10;  cluster env, {&#10;    definitionParameter = [&#10;      'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;      'kubecontext': '',&#10;      'namespace': 'plateer',&#10;    ]&#10;    environmentName = env&#10;    pluginKey = 'EC-Helm'&#10;  }&#10;&#10;  utilityResource 'local', {&#10;    resourceName = 'local'&#10;  }&#10;}&#10;}</command>
+        <condition></condition>
+        <description>  environment 'Guestbook-Dev', {&#10;    projectName = 'Guestbook'&#10;&#10;    cluster 'Guestbook-Dev', {&#10;      definitionParameter = [&#10;        'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;        'kubecontext': '',&#10;        'namespace': 'dev',&#10;      ]&#10;      environmentName = 'Guestbook-Dev'&#10;      pluginKey = 'EC-Helm'&#10;    }&#10;&#10;    utilityResource 'local', {&#10;      resourceName = 'local'&#10;    }&#10;  }&#10;&#10;  environment 'Guestbook-QA', {&#10;    projectName = 'Guestbook'&#10;&#10;    cluster 'Guestbook-QA', {&#10;      definitionParameter = [&#10;        'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;        'kubecontext': '',&#10;        'namespace': 'qa',&#10;      ]&#10;      environmentName = 'Guestbook-QA'&#10;      pluginKey = 'EC-Helm'&#10;    }&#10;&#10;    utilityResource 'local', {&#10;      resourceName = 'local'&#10;    }&#10;  }&#10;&#10;&#10;  environment 'Guestbook-Prod', {&#10;    projectName = 'Guestbook'&#10;&#10;    cluster 'Guestbook-Prod', {&#10;      definitionParameter = [&#10;        'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;        'kubecontext': '',&#10;        'namespace': 'prod',&#10;      ]&#10;      environmentName = 'Guestbook-PROD'&#10;      pluginKey = 'EC-Helm'&#10;    }&#10;&#10;    utilityResource 'local', {&#10;      resourceName = 'local'&#10;    }&#10;  }&#10;</description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor></postProcessor>
+        <precondition></precondition>
+        <releaseMode>none</releaseMode>
+        <resourceName>local</resourceName>
+        <shell>ectool evalDsl --dslFile {0}</shell>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>0</tracked>
+        <workingDirectory></workingDirectory>
+        <workspaceName></workspaceName>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
+        <propertySheet>
+          <credentialProtected>0</credentialProtected>
+          <tracked>0</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+        </propertySheet>
+      </step>
+    </procedure>
+    <procedure>
+      <procedureName>createMicroservices</procedureName>
+      <description></description>
+      <jobNameTemplate></jobNameTemplate>
+      <resourceName>local</resourceName>
+      <timeLimit></timeLimit>
+      <timeLimitUnits>minutes</timeLimitUnits>
+      <tracked>0</tracked>
+      <workspaceName>default</workspaceName>
+      <acl>
+        <inheriting>1</inheriting>
+        <tracked>0</tracked>
+      </acl>
+      <propertySheet>
+        <credentialProtected>0</credentialProtected>
+        <tracked>0</tracked>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
+      </propertySheet>
+      <step>
+        <stepName>createMicroservices</stepName>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>def projName  = "$[/myProject/projectName]"&#10;def apps = ["guestbook-dev","guestbook-qa","guestbook-prod"]&#10;def resources = []&#10;def environments = []&#10;&#10;apps.each { app -&gt;&#10;application app, { &#10;  applicationType = 'microservice'&#10;  projectName = projName&#10;&#10;  microservice app, {&#10;    applicationName = app&#10;&#10;    definitionSource = 'helm_repository'&#10;&#10;    definitionSourceParameter = [&#10;      'repository_credential': '/projects/Guestbook/credentials/harbor_cred',&#10;      'repositoryName': 'guestbook-repo',&#10;      'repositoryUrl': 'https://harbor.idtplateer.com/chartrepo/guestbook',&#10;    ]&#10;&#10;    definitionType = 'helm'&#10;&#10;    deployParameter = [&#10;      'additionalOptions': '--create-namespace',&#10;      'chart': 'guestbook',&#10;      'releaseName': 'my-guestbook',&#10;      'version': '0.1.0',&#10;      'values': '''&#10;      ''',&#10;    ]&#10;&#10;    rollbackParameter = [&#10;      'rollbackEnabled': 'true',&#10;      'waitTimeout': '300',&#10;    ]&#10;&#10;    process 'Deploy Microservice Process', {&#10;      description = 'System generated process for microservice deployment'&#10;      microserviceName = app&#10;      processType = 'DEPLOY'&#10;      processStep 'Retrieve Artifact', {&#10;        description = 'System generated step to retrieve microservice definition artifact'&#10;        processStepType = 'plugin'&#10;        subprocedure = 'Source Provider'&#10;        subproject = '/plugins/EC-Helm/project'&#10;      }&#10;&#10;      processStep 'Deploy Microservice', {&#10;        description = 'System generated step to deploy microservice'&#10;        processStepType = 'plugin'&#10;        subprocedure = 'Deploy Service'&#10;        subproject = '/plugins/EC-Helm/project'&#10;      }&#10;&#10;      processDependency 'Retrieve Artifact', targetProcessStepName: 'Deploy Microservice'&#10;    }&#10;  }&#10;&#10;  process 'Deploy Application', {&#10;    description = 'System generated process for microservice application'&#10;    applicationName = app&#10;    processType = 'DEPLOY'&#10;    formalParameter 'ec_Guestbook-run', defaultValue: '1', {&#10;      expansionDeferred = '1'&#10;      type = 'checkbox'&#10;    }&#10;&#10;    processStep 'Guestbook', {&#10;      description = 'System generated step to invoke microservice process'&#10;      processStepType = 'process'&#10;      submicroservice = app&#10;      submicroserviceProcess = 'Deploy Microservice Process'&#10;      useUtilityResource = '1'&#10;&#10;      property 'ec_deploy', {&#10;        ec_notifierStatus = '0'&#10;      }&#10;    }&#10;&#10;    property 'ec_deploy', {&#10;      ec_notifierStatus = '0'&#10;    }&#10;  }&#10;&#10;  process 'Uninstall Application', {&#10;    applicationName = app&#10;    exclusiveEnvironment = '0'&#10;    processType = 'UNDEPLOY'&#10;    workspaceName = 'default'&#10;&#10;    processStep 'Delete Release', {&#10;      actualParameter = [&#10;        'actionOnError': '0',&#10;        'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;        'errorValue': '',&#10;        'options': '-n plateer',&#10;        'releaseName': 'my-guestbook',&#10;        'resultPropertySheet': '/myJob/deleteRelease',&#10;      ]&#10;      dependencyJoinType = 'and'&#10;      processStepType = 'plugin'&#10;      subprocedure = 'Delete Release'&#10;      subproject = '/plugins/EC-Helm/project'&#10;&#10;      // Custom properties&#10;&#10;      property 'ec_deploy', {&#10;&#10;        // Custom properties&#10;        ec_notifierStatus = '0'&#10;      }&#10;    }&#10;&#10;    processStep 'Delete PVC', {&#10;      actualParameter = [&#10;        'commandToRun': '''kubectl delete pvc -l app.kubernetes.io/instance=my-guestbook -n plateer&#10;kubectl delete ns plateer''',&#10;      ]&#10;      dependencyJoinType = 'and'&#10;      processStepType = 'command'&#10;      subprocedure = 'RunCommand'&#10;      subproject = '/plugins/EC-Core/project'&#10;      useUtilityResource = '1'&#10;      utilityResourceName = 'local'&#10;      property 'ec_deploy', {&#10;        ec_notifierStatus = '0'&#10;      }&#10;    }&#10;&#10;    processDependency 'Delete Release', targetProcessStepName: 'Delete PVC'&#10;&#10;    property 'ec_deploy', {&#10;      ec_notifierStatus = '0'&#10;    }&#10;  }&#10;&#10;  property 'ec_deploy', { &#10;    ec_notifierStatus = '0'&#10;  } &#10;}&#10;}</command>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusiveMode>none</exclusiveMode>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor></postProcessor>
+        <precondition></precondition>
+        <releaseMode>none</releaseMode>
+        <resourceName></resourceName>
+        <shell>ectool evalDsl --dslFile {0}</shell>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>0</tracked>
+        <workingDirectory></workingDirectory>
+        <workspaceName></workspaceName>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
+        <propertySheet>
+          <credentialProtected>0</credentialProtected>
+          <tracked>0</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+        </propertySheet>
+      </step>
+    </procedure>
   </project>
 </exportedData>
