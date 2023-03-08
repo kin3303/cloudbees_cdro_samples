@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<exportedData version="107" buildLabel="build_10.4_153852_2022.03.22_08:16:02" buildVersion="10.4.2.153852" passkey="81accb035bfa4ed1faa512a3b0a173809d65cad0">
+<exportedData version="107" buildLabel="build_10.4_153852_2022.03.22_08:16:02" buildVersion="10.4.2.153852" passkey="e6e61433c8548e8678374891758cefb0cf017210">
   <exportPath>/projects/Guestbook</exportPath>
   <project>
     <projectName>Guestbook</projectName>
@@ -274,249 +274,6 @@
         </acl>
       </propertySheet>
     </pluginConfiguration>
-    <environment>
-      <environmentName>Guestbook_dev</environmentName>
-      <environmentEnabled>1</environmentEnabled>
-      <tracked>0</tracked>
-      <acl>
-        <inheriting>1</inheriting>
-        <tracked>0</tracked>
-      </acl>
-      <propertySheet>
-        <credentialProtected>0</credentialProtected>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-      </propertySheet>
-      <cluster>
-        <clusterName>Guestbook_dev</clusterName>
-        <environmentName>Guestbook_dev</environmentName>
-        <pluginKey>EC-Helm</pluginKey>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <definitionParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>config</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>/projects/Guestbook/pluginConfigurations/helmcfg</value>
-          </property>
-          <property>
-            <propertyName>kubecontext</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value></value>
-          </property>
-          <property>
-            <propertyName>namespace</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>plateer</value>
-          </property>
-        </definitionParameters>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-      </cluster>
-      <utilityResource>
-        <utilityResourceName>local</utilityResourceName>
-        <resourceName>local</resourceName>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-      </utilityResource>
-    </environment>
-    <environment>
-      <environmentName>Guestbook_prod</environmentName>
-      <environmentEnabled>1</environmentEnabled>
-      <tracked>0</tracked>
-      <acl>
-        <inheriting>1</inheriting>
-        <tracked>0</tracked>
-      </acl>
-      <propertySheet>
-        <credentialProtected>0</credentialProtected>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-      </propertySheet>
-      <cluster>
-        <clusterName>Guestbook_prod</clusterName>
-        <environmentName>Guestbook_prod</environmentName>
-        <pluginKey>EC-Helm</pluginKey>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <definitionParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>config</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>/projects/Guestbook/pluginConfigurations/helmcfg</value>
-          </property>
-          <property>
-            <propertyName>kubecontext</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value></value>
-          </property>
-          <property>
-            <propertyName>namespace</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>plateer</value>
-          </property>
-        </definitionParameters>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-      </cluster>
-      <utilityResource>
-        <utilityResourceName>local</utilityResourceName>
-        <resourceName>local</resourceName>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-      </utilityResource>
-    </environment>
-    <environment>
-      <environmentName>Guestbook_qa</environmentName>
-      <environmentEnabled>1</environmentEnabled>
-      <tracked>0</tracked>
-      <acl>
-        <inheriting>1</inheriting>
-        <tracked>0</tracked>
-      </acl>
-      <propertySheet>
-        <credentialProtected>0</credentialProtected>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-      </propertySheet>
-      <cluster>
-        <clusterName>Guestbook_qa</clusterName>
-        <environmentName>Guestbook_qa</environmentName>
-        <pluginKey>EC-Helm</pluginKey>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <definitionParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>config</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>/projects/Guestbook/pluginConfigurations/helmcfg</value>
-          </property>
-          <property>
-            <propertyName>kubecontext</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value></value>
-          </property>
-          <property>
-            <propertyName>namespace</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>plateer</value>
-          </property>
-        </definitionParameters>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-      </cluster>
-      <utilityResource>
-        <utilityResourceName>local</utilityResourceName>
-        <resourceName>local</resourceName>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-      </utilityResource>
-    </environment>
     <procedure>
       <procedureName>createApplication</procedureName>
       <description></description>
@@ -650,7 +407,7 @@
         <stepName>createEnvs</stepName>
         <alwaysRun>0</alwaysRun>
         <broadcast>0</broadcast>
-        <command>def projName  = "$[/myProject/projectName]"&#10;def envs = ["dev","qa","prod"]&#10;def resources = []&#10;def environments = []&#10;&#10;envs.each { env -&gt;&#10;def envName = (String)"${projName}_${env}"&#10;&#10;environment envName, { &#10;  projectName = projName&#10;  &#10;  cluster envName, {&#10;    definitionParameter = [&#10;      'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;      'kubecontext': '',&#10;      'namespace': 'plateer',&#10;    ]&#10;    environmentName = envName&#10;    pluginKey = 'EC-Helm'&#10;  }&#10;&#10;  utilityResource 'local', {&#10;    resourceName = 'local'&#10;  }&#10;}&#10;&#10;}</command>
+        <command>def projName  = "$[/myProject/projectName]"&#10;def envs = ["dev","qa","prod"]&#10;def resources = []&#10;def environments = []&#10;&#10;envs.each { env -&gt;&#10;def envName = (String)"${projName}_${env}"&#10;def ns = (String)"${env}"&#10;&#10;environment envName, { &#10;  projectName = projName&#10;  &#10;  cluster envName, {&#10;    definitionParameter = [&#10;      'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;      'kubecontext': '',&#10;      'namespace': ns,&#10;    ]&#10;    environmentName = envName&#10;    pluginKey = 'EC-Helm'&#10;  }&#10;&#10;  utilityResource 'local', {&#10;    resourceName = 'local'&#10;  }&#10;}&#10;&#10;}</command>
         <condition></condition>
         <description>def projName  = "$[/myProject/projectName]"&#10;def envs = ["guestbook-dev","guestbook-qa","guestbook-prod"]&#10;def resources = []&#10;def environments = []&#10;&#10;envs.each { env -&gt;&#10;environment env, { &#10;  projectName = projName&#10;&#10;  cluster env, {&#10;    definitionParameter = [&#10;      'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;      'kubecontext': '',&#10;      'namespace': 'plateer',&#10;    ]&#10;    environmentName = env&#10;    pluginKey = 'EC-Helm'&#10;  }&#10;&#10;  utilityResource 'local', {&#10;    resourceName = 'local'&#10;  }&#10;}&#10;}</description>
         <errorHandling>failProcedure</errorHandling>
@@ -684,9 +441,9 @@
         <stepName>createMicroservices</stepName>
         <alwaysRun>0</alwaysRun>
         <broadcast>0</broadcast>
-        <command>def projName  = "$[/myProject/projectName]"&#10;def envs = ["dev","qa","prod"]&#10;def resources = []&#10;def environments = []&#10;def helmValues = ''&#10;&#10;envs.each { env -&gt;&#10;&#10;    def appName = (String)"${projName}_${env}"&#10;    def envName = (String)"${env}"&#10;    def isDev = envName.toLowerCase().contains("dev")&#10;    def isQA = envName.toLowerCase().contains("qa")&#10;&#10;    if(isDev) {&#10;      helmValues =  (String)"""&#10;$[devValues]&#10;"""&#10;    } else if (isQA) {  &#10;      helmValues =  (String)"""&#10;$[qaValues]&#10;"""&#10;    } else {&#10;      helmValues = (String)"""&#10;$[prodValues]&#10;"""&#10;    }&#10;&#10;    application appName, { &#10;    applicationType = 'microservice'&#10;    projectName = projName&#10;&#10;    microservice appName, {&#10;        applicationName = appName&#10;&#10;        definitionSource = 'helm_repository'&#10;&#10;        definitionSourceParameter = [&#10;        'repository_credential': '/projects/Guestbook/credentials/harbor_cred',&#10;        'repositoryName': 'guestbook-repo',&#10;        'repositoryUrl': 'https://harbor.idtplateer.com/chartrepo/guestbook',&#10;        ]&#10;&#10;        definitionType = 'helm'&#10;&#10;        deployParameter = [&#10;        'additionalOptions': '--create-namespace',&#10;        'chart': 'guestbook',&#10;        'releaseName': 'my-guestbook',&#10;        'version': '0.1.0',&#10;        'values': helmValues,&#10;        ]&#10;&#10;        rollbackParameter = [&#10;        'rollbackEnabled': 'true',&#10;        'waitTimeout': '300',&#10;        ]&#10;&#10;        process 'Deploy Microservice Process', {&#10;        description = 'System generated process for microservice deployment'&#10;        microserviceName = appName&#10;        processType = 'DEPLOY'&#10;        processStep 'Retrieve Artifact', {&#10;            description = 'System generated step to retrieve microservice definition artifact'&#10;            processStepType = 'plugin'&#10;            subprocedure = 'Source Provider'&#10;            subproject = '/plugins/EC-Helm/project'&#10;        }&#10;&#10;        processStep 'Deploy Microservice', {&#10;            description = 'System generated step to deploy microservice'&#10;            processStepType = 'plugin'&#10;            subprocedure = 'Deploy Service'&#10;            subproject = '/plugins/EC-Helm/project'&#10;        }&#10;&#10;        processDependency 'Retrieve Artifact', targetProcessStepName: 'Deploy Microservice'&#10;        }&#10;    }&#10;&#10;    process 'Deploy Application', {&#10;        description = 'System generated process for microservice application'&#10;        applicationName = appName&#10;        processType = 'DEPLOY'&#10;        formalParameter 'ec_Guestbook-run', defaultValue: '1', {&#10;        expansionDeferred = '1'&#10;        type = 'checkbox'&#10;        }&#10;&#10;        processStep 'Guestbook', {&#10;        description = 'System generated step to invoke microservice process'&#10;        processStepType = 'process'&#10;        submicroservice = appName&#10;        submicroserviceProcess = 'Deploy Microservice Process'&#10;        useUtilityResource = '1'&#10;&#10;        property 'ec_deploy', {&#10;            ec_notifierStatus = '0'&#10;        }&#10;        }&#10;&#10;        property 'ec_deploy', {&#10;        ec_notifierStatus = '0'&#10;        }&#10;    }&#10;&#10;    process 'Uninstall Application', {&#10;        applicationName = appName&#10;        exclusiveEnvironment = '0'&#10;        processType = 'UNDEPLOY'&#10;        workspaceName = 'default'&#10;&#10;        processStep 'Delete Release', {&#10;        actualParameter = [&#10;            'actionOnError': '0',&#10;            'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;            'errorValue': '',&#10;            'options': (String)"-n ${envName}",&#10;            'releaseName': 'my-guestbook',&#10;            'resultPropertySheet': '/myJob/deleteRelease',&#10;        ]&#10;        dependencyJoinType = 'and'&#10;        processStepType = 'plugin'&#10;        subprocedure = 'Delete Release'&#10;        subproject = '/plugins/EC-Helm/project'&#10;&#10;        // Custom properties&#10;&#10;        property 'ec_deploy', {&#10;&#10;            // Custom properties&#10;            ec_notifierStatus = '0'&#10;        }&#10;        }&#10;&#10;        processStep 'Delete PVC', {&#10;        actualParameter = [&#10;            'commandToRun': (String)"""&#10;            kubectl delete pvc -l app.kubernetes.io/instance=my-guestbook -n ${envName}&#10;            kubectl delete ns ${envName}&#10;            """,&#10;        ]&#10;        dependencyJoinType = 'and'&#10;        processStepType = 'command'&#10;        subprocedure = 'RunCommand'&#10;        subproject = '/plugins/EC-Core/project'&#10;        useUtilityResource = '1'&#10;        utilityResourceName = 'local'&#10;        property 'ec_deploy', {&#10;            ec_notifierStatus = '0'&#10;        }&#10;        }&#10;&#10;        processDependency 'Delete Release', targetProcessStepName: 'Delete PVC'&#10;&#10;        property 'ec_deploy', {&#10;        ec_notifierStatus = '0'&#10;        }&#10;    }&#10;&#10;    property 'ec_deploy', { &#10;        ec_notifierStatus = '0'&#10;    } &#10;    }&#10;&#10;}</command>
+        <command>def projName = "Guestbook"&#10;def envs = ["dev","qa","prod"]&#10;def resources = []&#10;def environments = []&#10;def helmValues = ''&#10;&#10;envs.each { env -&gt;&#10;&#10;    def appName = (String)"${projName}_${env}"&#10;    def envName = (String)"${env}"&#10;    def isDev = envName.toLowerCase().contains("dev")&#10;    def isQA = envName.toLowerCase().contains("qa")&#10;&#10;    if(isDev) {&#10;      helmValues = (String)"""&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  # drop:&#10;  # - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;  # requests:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |-&#10;    appendonly no&#10;&#10;consul:&#10;  enabled: false&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;&#10;&#10;ingress:&#10;  enabled: true&#10;  ingressClassName: 'guestbook'&#10;  annotations:&#10;    alb.ingress.kubernetes.io/load-balancer-name: 'guestbook'&#10;    alb.ingress.kubernetes.io/scheme: 'internet-facing'&#10;    alb.ingress.kubernetes.io/target-type: ip&#10;    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80,"HTTPS":443}]'&#10;    alb.ingress.kubernetes.io/certificate-arn: 'arn:aws:acm:ap-northeast-2:960249453675:certificate/3915d0da-6dd2-4384-8fb0-558b25bf1ff4'&#10;    alb.ingress.kubernetes.io/ssl-policy: 'ELBSecurityPolicy-TLS-1-2-Ext-2018-06'&#10;    alb.ingress.kubernetes.io/actions.ssl-redirect: '443'&#10;    external-dns.alpha.kubernetes.io/hostname: 'devgb.idtplateer.com'&#10;  hosts:&#10;    - host: 'devgb.idtplateer.com'&#10;      paths:&#10;        - path: "/"&#10;          pathType: Prefix&#10;  tls:&#10;    - hosts:&#10;      - 'devgb.idtplateer.com'&#10;"""&#10;    } else if (isQA) {&#10;      helmValues = (String)"""&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  # drop:&#10;  # - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;  # requests:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |-&#10;    appendonly no&#10;consul:&#10;  enabled: false&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;&#10;&#10;ingress:&#10;  enabled: true&#10;  ingressClassName: 'guestbook'&#10;  annotations:&#10;    alb.ingress.kubernetes.io/load-balancer-name: 'guestbook'&#10;    alb.ingress.kubernetes.io/scheme: 'internet-facing'&#10;    alb.ingress.kubernetes.io/target-type: ip&#10;    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80,"HTTPS":443}]'&#10;    alb.ingress.kubernetes.io/certificate-arn: 'arn:aws:acm:ap-northeast-2:960249453675:certificate/3915d0da-6dd2-4384-8fb0-558b25bf1ff4'&#10;    alb.ingress.kubernetes.io/ssl-policy: 'ELBSecurityPolicy-TLS-1-2-Ext-2018-06'&#10;    alb.ingress.kubernetes.io/actions.ssl-redirect: '443'&#10;    external-dns.alpha.kubernetes.io/hostname: 'qagb.idtplateer.com'&#10;  hosts:&#10;    - host: 'qagb.idtplateer.com'&#10;      paths:&#10;        - path: "/"&#10;          pathType: Prefix&#10;  tls:&#10;    - hosts:&#10;      - 'qagb.idtplateer.com'&#10;"""&#10;    } else {&#10;      helmValues = (String)"""&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  # drop:&#10;  # - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;ingress:&#10;  enabled: false&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;  # requests:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |-&#10;    appendonly no&#10;  consul:&#10;    enabled: true&#10;&#10;consul:&#10;  enabled: true&#10;&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;"""&#10;    }&#10;&#10;    application appName, {&#10;        applicationType = 'microservice'&#10;        projectName = projName&#10;&#10;        microservice appName, {&#10;            applicationName = appName&#10;&#10;            definitionSource = 'helm_repository'&#10;&#10;            definitionSourceParameter = [&#10;                'repository_credential': '/projects/Guestbook/credentials/harbor_cred',&#10;                'repositoryName': 'guestbook-repo',&#10;                'repositoryUrl': 'https://harbor.idtplateer.com/chartrepo/guestbook',&#10;            ]&#10;&#10;            definitionType = 'helm'&#10;&#10;            deployParameter = [&#10;                'additionalOptions': '--create-namespace',&#10;                'chart': 'guestbook',&#10;                'releaseName': 'my-guestbook',&#10;                'version': '0.1.0',&#10;                'values': helmValues,&#10;            ]&#10;&#10;            rollbackParameter = [&#10;                'rollbackEnabled': 'true',&#10;                'waitTimeout': '300',&#10;            ]&#10;        }&#10;&#10;        process 'Deploy Application', {&#10;            description = 'System generated process for microservice application'&#10;            applicationName = appName&#10;            processType = 'DEPLOY'&#10;            formalParameter 'ec_Guestbook-run', defaultValue: '1', {&#10;                expansionDeferred = '1'&#10;                type = 'checkbox'&#10;            }&#10;            &#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        process 'Uninstall Application', {&#10;            applicationName = appName&#10;            exclusiveEnvironment = '0'&#10;            processType = 'UNDEPLOY'&#10;            workspaceName = 'default'&#10;&#10;            processStep 'Delete Release', {&#10;                actualParameter = [&#10;                    'actionOnError': '0',&#10;                    'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;                    'errorValue': '',&#10;                    'options': (String)"-n ${envName}",&#10;                    'releaseName': 'my-guestbook',&#10;                    'resultPropertySheet': '/myJob/deleteRelease',&#10;                ]&#10;                dependencyJoinType = 'and'&#10;                processStepType = 'plugin'&#10;                subprocedure = 'Delete Release'&#10;                subproject = '/plugins/EC-Helm/project'&#10;&#10;                property 'ec_deploy', {&#10;                    ec_notifierStatus = '0'&#10;                }&#10;            }&#10;&#10;            processStep 'Delete PVC', {&#10;                actualParameter = [&#10;                    'commandToRun': (String)"""&#10;                    kubectl delete pvc -l app.kubernetes.io/instance=my-guestbook -n ${envName}&#10;                    kubectl delete ns ${envName}&#10;                    """,&#10;                ]&#10;                dependencyJoinType = 'and'&#10;                processStepType = 'command'&#10;                subprocedure = 'RunCommand'&#10;                subproject = '/plugins/EC-Core/project'&#10;                useUtilityResource = '1'&#10;                utilityResourceName = 'local'&#10;                property 'ec_deploy', {&#10;                    ec_notifierStatus = '0'&#10;                }&#10;            }&#10;&#10;            createProcessDependency componentApplicationName: appName,&#10;                processStepName: 'Delete Release',&#10;                targetProcessStepName: 'Delete PVC'&#10;&#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        property 'ec_deploy', {&#10;            ec_notifierStatus = '0'&#10;        }&#10;    }&#10;&#10;}</command>
         <condition></condition>
-        <description>def projName  = "$[/myProject/projectName]"&#10;def envs = ["dev","qa","prod"]&#10;def resources = []&#10;def environments = []&#10;&#10;envs.each { env -&gt;&#10;def appName = (String)"${projName}_${env}"&#10;def envName = (String)"${env}"&#10;&#10;application appName, { &#10;  applicationType = 'microservice'&#10;  projectName = projName&#10;&#10;  microservice appName, {&#10;    applicationName = appName&#10;&#10;    definitionSource = 'helm_repository'&#10;&#10;    definitionSourceParameter = [&#10;      'repository_credential': '/projects/Guestbook/credentials/harbor_cred',&#10;      'repositoryName': 'guestbook-repo',&#10;      'repositoryUrl': 'https://harbor.idtplateer.com/chartrepo/guestbook',&#10;    ]&#10;&#10;    definitionType = 'helm'&#10;&#10;    deployParameter = [&#10;      'additionalOptions': '--create-namespace',&#10;      'chart': 'guestbook',&#10;      'releaseName': 'my-guestbook',&#10;      'version': '0.1.0',&#10;      'values': '''&#10;      ''',&#10;    ]&#10;&#10;    rollbackParameter = [&#10;      'rollbackEnabled': 'true',&#10;      'waitTimeout': '300',&#10;    ]&#10;&#10;    process 'Deploy Microservice Process', {&#10;      description = 'System generated process for microservice deployment'&#10;      microserviceName = appName&#10;      processType = 'DEPLOY'&#10;      processStep 'Retrieve Artifact', {&#10;        description = 'System generated step to retrieve microservice definition artifact'&#10;        processStepType = 'plugin'&#10;        subprocedure = 'Source Provider'&#10;        subproject = '/plugins/EC-Helm/project'&#10;      }&#10;&#10;      processStep 'Deploy Microservice', {&#10;        description = 'System generated step to deploy microservice'&#10;        processStepType = 'plugin'&#10;        subprocedure = 'Deploy Service'&#10;        subproject = '/plugins/EC-Helm/project'&#10;      }&#10;&#10;      processDependency 'Retrieve Artifact', targetProcessStepName: 'Deploy Microservice'&#10;    }&#10;  }&#10;&#10;  process 'Deploy Application', {&#10;    description = 'System generated process for microservice application'&#10;    applicationName = appName&#10;    processType = 'DEPLOY'&#10;    formalParameter 'ec_Guestbook-run', defaultValue: '1', {&#10;      expansionDeferred = '1'&#10;      type = 'checkbox'&#10;    }&#10;&#10;    processStep 'Guestbook', {&#10;      description = 'System generated step to invoke microservice process'&#10;      processStepType = 'process'&#10;      submicroservice = appName&#10;      submicroserviceProcess = 'Deploy Microservice Process'&#10;      useUtilityResource = '1'&#10;&#10;      property 'ec_deploy', {&#10;        ec_notifierStatus = '0'&#10;      }&#10;    }&#10;&#10;    property 'ec_deploy', {&#10;      ec_notifierStatus = '0'&#10;    }&#10;  }&#10;&#10;  process 'Uninstall Application', {&#10;    applicationName = appName&#10;    exclusiveEnvironment = '0'&#10;    processType = 'UNDEPLOY'&#10;    workspaceName = 'default'&#10;&#10;    processStep 'Delete Release', {&#10;      actualParameter = [&#10;        'actionOnError': '0',&#10;        'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;        'errorValue': '',&#10;        'options': (String)"-n ${envName}",&#10;        'releaseName': 'my-guestbook',&#10;        'resultPropertySheet': '/myJob/deleteRelease',&#10;      ]&#10;      dependencyJoinType = 'and'&#10;      processStepType = 'plugin'&#10;      subprocedure = 'Delete Release'&#10;      subproject = '/plugins/EC-Helm/project'&#10;&#10;      // Custom properties&#10;&#10;      property 'ec_deploy', {&#10;&#10;        // Custom properties&#10;        ec_notifierStatus = '0'&#10;      }&#10;    }&#10;&#10;    processStep 'Delete PVC', {&#10;      actualParameter = [&#10;        'commandToRun': (String)"""&#10;        kubectl delete pvc -l app.kubernetes.io/instance=my-guestbook -n ${envName}&#10;        kubectl delete ns ${envName}&#10;        """,&#10;      ]&#10;      dependencyJoinType = 'and'&#10;      processStepType = 'command'&#10;      subprocedure = 'RunCommand'&#10;      subproject = '/plugins/EC-Core/project'&#10;      useUtilityResource = '1'&#10;      utilityResourceName = 'local'&#10;      property 'ec_deploy', {&#10;        ec_notifierStatus = '0'&#10;      }&#10;    }&#10;&#10;    processDependency 'Delete Release', targetProcessStepName: 'Delete PVC'&#10;&#10;    property 'ec_deploy', {&#10;      ec_notifierStatus = '0'&#10;    }&#10;  }&#10;&#10;  property 'ec_deploy', { &#10;    ec_notifierStatus = '0'&#10;  } &#10;}&#10;&#10;}</description>
+        <description>def projName = "Guestbook"&#10;def envs = ["dev","qa","prod"]&#10;def resources = []&#10;def environments = []&#10;def helmValues = ''&#10;&#10;envs.each { env -&gt;&#10;&#10;    def appName = (String)"${projName}_${env}"&#10;    def envName = (String)"${env}"&#10;    def isDev = envName.toLowerCase().contains("dev")&#10;    def isQA = envName.toLowerCase().contains("qa")&#10;&#10;    if(isDev) {&#10;      helmValues = (String)"""&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  # drop:&#10;  # - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;  # requests:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |-&#10;    appendonly no&#10;&#10;consul:&#10;  enabled: false&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;&#10;&#10;ingress:&#10;  enabled: true&#10;  ingressClassName: 'guestbook'&#10;  annotations:&#10;    alb.ingress.kubernetes.io/load-balancer-name: 'guestbook'&#10;    alb.ingress.kubernetes.io/scheme: 'internet-facing'&#10;    alb.ingress.kubernetes.io/target-type: ip&#10;    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80,"HTTPS":443}]'&#10;    alb.ingress.kubernetes.io/certificate-arn: 'arn:aws:acm:ap-northeast-2:960249453675:certificate/3915d0da-6dd2-4384-8fb0-558b25bf1ff4'&#10;    alb.ingress.kubernetes.io/ssl-policy: 'ELBSecurityPolicy-TLS-1-2-Ext-2018-06'&#10;    alb.ingress.kubernetes.io/actions.ssl-redirect: '443'&#10;    external-dns.alpha.kubernetes.io/hostname: 'devgb.idtplateer.com'&#10;  hosts:&#10;    - host: 'devgb.idtplateer.com'&#10;      paths:&#10;        - path: "/"&#10;          pathType: Prefix&#10;  tls:&#10;    - hosts:&#10;      - 'devgb.idtplateer.com'&#10;"""&#10;    } else if (isQA) {&#10;      helmValues = (String)"""&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  # drop:&#10;  # - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;  # requests:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |-&#10;    appendonly no&#10;consul:&#10;  enabled: false&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;&#10;&#10;ingress:&#10;  enabled: true&#10;  ingressClassName: 'guestbook'&#10;  annotations:&#10;    alb.ingress.kubernetes.io/load-balancer-name: 'guestbook'&#10;    alb.ingress.kubernetes.io/scheme: 'internet-facing'&#10;    alb.ingress.kubernetes.io/target-type: ip&#10;    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80,"HTTPS":443}]'&#10;    alb.ingress.kubernetes.io/certificate-arn: 'arn:aws:acm:ap-northeast-2:960249453675:certificate/3915d0da-6dd2-4384-8fb0-558b25bf1ff4'&#10;    alb.ingress.kubernetes.io/ssl-policy: 'ELBSecurityPolicy-TLS-1-2-Ext-2018-06'&#10;    alb.ingress.kubernetes.io/actions.ssl-redirect: '443'&#10;    external-dns.alpha.kubernetes.io/hostname: 'qagb.idtplateer.com'&#10;  hosts:&#10;    - host: 'qagb.idtplateer.com'&#10;      paths:&#10;        - path: "/"&#10;          pathType: Prefix&#10;  tls:&#10;    - hosts:&#10;      - 'qagb.idtplateer.com'&#10;"""&#10;    } else {&#10;      helmValues = (String)"""&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  # drop:&#10;  # - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;ingress:&#10;  enabled: false&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;  # requests:&#10;  # cpu: 100m&#10;  # memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |-&#10;    appendonly no&#10;  consul:&#10;    enabled: true&#10;&#10;consul:&#10;  enabled: true&#10;&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;"""&#10;    }&#10;&#10;    application appName, {&#10;        applicationType = 'microservice'&#10;        projectName = projName&#10;&#10;        microservice appName, {&#10;            applicationName = appName&#10;&#10;            definitionSource = 'helm_repository'&#10;&#10;            definitionSourceParameter = [&#10;                'repository_credential': '/projects/Guestbook/credentials/harbor_cred',&#10;                'repositoryName': 'guestbook-repo',&#10;                'repositoryUrl': 'https://harbor.idtplateer.com/chartrepo/guestbook',&#10;            ]&#10;&#10;            definitionType = 'helm'&#10;&#10;            deployParameter = [&#10;                'additionalOptions': '--create-namespace',&#10;                'chart': 'guestbook',&#10;                'releaseName': 'my-guestbook',&#10;                'version': '0.1.0',&#10;                'values': helmValues,&#10;            ]&#10;&#10;            rollbackParameter = [&#10;                'rollbackEnabled': 'true',&#10;                'waitTimeout': '300',&#10;            ]&#10;&#10;            process 'Deploy Microservice Process', {&#10;                description = 'System generated process for microservice deployment'&#10;                microserviceName = appName&#10;                processType = 'DEPLOY'&#10;                processStep 'Retrieve Artifact', {&#10;                    description = 'System generated step to retrieve microservice definition artifact'&#10;                    processStepType = 'plugin'&#10;                    subprocedure = 'Source Provider'&#10;                    subproject = '/plugins/EC-Helm/project'&#10;                }&#10;&#10;                processStep 'Deploy Microservice', {&#10;                    description = 'System generated step to deploy microservice'&#10;                    processStepType = 'plugin'&#10;                    subprocedure = 'Deploy Service'&#10;                    subproject = '/plugins/EC-Helm/project'&#10;                }&#10;                createProcessDependency componentApplicationName: appName,&#10;                                    processStepName: 'Retrieve Artifact',&#10;                                    targetProcessStepName: 'Deploy Microservice'&#10;            }&#10;        }&#10;&#10;        process 'Deploy Application', {&#10;            description = 'System generated process for microservice application'&#10;            applicationName = appName&#10;            processType = 'DEPLOY'&#10;            formalParameter 'ec_Guestbook-run', defaultValue: '1', {&#10;                expansionDeferred = '1'&#10;                type = 'checkbox'&#10;            }&#10;            &#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        process 'Uninstall Application', {&#10;            applicationName = appName&#10;            exclusiveEnvironment = '0'&#10;            processType = 'UNDEPLOY'&#10;            workspaceName = 'default'&#10;&#10;            processStep 'Delete Release', {&#10;                actualParameter = [&#10;                    'actionOnError': '0',&#10;                    'config': '/projects/Guestbook/pluginConfigurations/helmcfg',&#10;                    'errorValue': '',&#10;                    'options': (String)"-n ${envName}",&#10;                    'releaseName': 'my-guestbook',&#10;                    'resultPropertySheet': '/myJob/deleteRelease',&#10;                ]&#10;                dependencyJoinType = 'and'&#10;                processStepType = 'plugin'&#10;                subprocedure = 'Delete Release'&#10;                subproject = '/plugins/EC-Helm/project'&#10;&#10;                property 'ec_deploy', {&#10;                    ec_notifierStatus = '0'&#10;                }&#10;            }&#10;&#10;            processStep 'Delete PVC', {&#10;                actualParameter = [&#10;                    'commandToRun': (String)"""&#10;                    kubectl delete pvc -l app.kubernetes.io/instance=my-guestbook -n ${envName}&#10;                    kubectl delete ns ${envName}&#10;                    """,&#10;                ]&#10;                dependencyJoinType = 'and'&#10;                processStepType = 'command'&#10;                subprocedure = 'RunCommand'&#10;                subproject = '/plugins/EC-Core/project'&#10;                useUtilityResource = '1'&#10;                utilityResourceName = 'local'&#10;                property 'ec_deploy', {&#10;                    ec_notifierStatus = '0'&#10;                }&#10;            }&#10;&#10;            createProcessDependency componentApplicationName: appName,&#10;                processStepName: 'Delete Release',&#10;                targetProcessStepName: 'Delete PVC'&#10;&#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        property 'ec_deploy', {&#10;            ec_notifierStatus = '0'&#10;        }&#10;    }&#10;&#10;}</description>
         <errorHandling>failProcedure</errorHandling>
         <exclusiveMode>none</exclusiveMode>
         <logFileName></logFileName>
@@ -805,1737 +562,6 @@
         </propertySheet>
       </step>
     </procedure>
-    <application>
-      <applicationName>Guestbook_dev</applicationName>
-      <applicationType>microservice</applicationType>
-      <tracked>0</tracked>
-      <acl>
-        <inheriting>1</inheriting>
-        <tracked>0</tracked>
-      </acl>
-      <propertySheet>
-        <credentialProtected>0</credentialProtected>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <property>
-          <propertyName>ec_deploy</propertyName>
-          <tracked>0</tracked>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_notifierStatus</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>0</value>
-            </property>
-          </propertySheet>
-        </property>
-      </propertySheet>
-      <microservice>
-        <microserviceName>Guestbook_dev</microserviceName>
-        <applicationName>Guestbook_dev</applicationName>
-        <definitionSource>helm_repository</definitionSource>
-        <definitionType>helm</definitionType>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <definitionSourceParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>repositoryName</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>guestbook-repo</value>
-          </property>
-          <property>
-            <propertyName>repositoryUrl</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>https://harbor.idtplateer.com/chartrepo/guestbook</value>
-          </property>
-          <property>
-            <propertyName>repository_credential</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>/projects/Guestbook/credentials/harbor_cred</value>
-          </property>
-        </definitionSourceParameters>
-        <deployParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>additionalOptions</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>--create-namespace</value>
-          </property>
-          <property>
-            <propertyName>chart</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>guestbook</value>
-          </property>
-          <property>
-            <propertyName>releaseName</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>my-guestbook</value>
-          </property>
-          <property>
-            <propertyName>values</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  #   drop:&#10;  #   - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  #   cpu: 100m&#10;  #   memory: 128Mi&#10;  # requests:&#10;  #   cpu: 100m&#10;  #   memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |- &#10;    appendonly no&#10;&#10;consul:&#10;  enabled: false&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;&#10;&#10;ingress:&#10;  enabled: true&#10;  ingressClassName: 'guestbook'&#10;  annotations:&#10;    alb.ingress.kubernetes.io/load-balancer-name: 'guestbook'&#10;    alb.ingress.kubernetes.io/scheme: 'internet-facing'&#10;    alb.ingress.kubernetes.io/target-type: ip&#10;    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80,"HTTPS":443}]'&#10;    alb.ingress.kubernetes.io/certificate-arn: 'arn:aws:acm:ap-northeast-2:960249453675:certificate/3915d0da-6dd2-4384-8fb0-558b25bf1ff4'&#10;    alb.ingress.kubernetes.io/ssl-policy: 'ELBSecurityPolicy-TLS-1-2-Ext-2018-06'&#10;    alb.ingress.kubernetes.io/actions.ssl-redirect: '443'&#10;    external-dns.alpha.kubernetes.io/hostname: 'devgb.idtplateer.com'&#10;  hosts:&#10;    - host: 'devgb.idtplateer.com'&#10;      paths:&#10;        - path: "/"&#10;          pathType: Prefix&#10;  tls:&#10;    - hosts:&#10;      - 'devgb.idtplateer.com'&#10;</value>
-          </property>
-          <property>
-            <propertyName>version</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>0.1.0</value>
-          </property>
-        </deployParameters>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-        <rollbackParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>rollbackEnabled</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>true</value>
-          </property>
-          <property>
-            <propertyName>waitTimeout</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>300</value>
-          </property>
-        </rollbackParameters>
-        <process>
-          <processName>Deploy Microservice Process</processName>
-          <description>System generated process for microservice deployment</description>
-          <processType>DEPLOY</processType>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-          </propertySheet>
-          <processStep>
-            <processStepName>Retrieve Artifact</processStepName>
-            <alwaysRun>0</alwaysRun>
-            <description>System generated step to retrieve microservice definition artifact</description>
-            <errorHandling>abortJob</errorHandling>
-            <processStepType>plugin</processStepType>
-            <subprocedure>Source Provider</subprocedure>
-            <subproject>/plugins/EC-Helm/project</subproject>
-            <timeLimitUnits>minutes</timeLimitUnits>
-            <tracked>0</tracked>
-            <useUtilityResource>0</useUtilityResource>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-            </propertySheet>
-          </processStep>
-          <processStep>
-            <processStepName>Deploy Microservice</processStepName>
-            <alwaysRun>0</alwaysRun>
-            <description>System generated step to deploy microservice</description>
-            <errorHandling>abortJob</errorHandling>
-            <processStepType>plugin</processStepType>
-            <subprocedure>Deploy Service</subprocedure>
-            <subproject>/plugins/EC-Helm/project</subproject>
-            <timeLimitUnits>minutes</timeLimitUnits>
-            <tracked>0</tracked>
-            <useUtilityResource>0</useUtilityResource>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-            </propertySheet>
-          </processStep>
-          <processDependency>
-            <branchType>ALWAYS</branchType>
-            <source>processStep-65505c6f-b8da-11ed-bcc4-029890443bb4</source>
-            <sourceName>Retrieve Artifact</sourceName>
-            <target>processStep-65525843-b8da-11ed-bcc4-029890443bb4</target>
-            <targetName>Deploy Microservice</targetName>
-            <tracked>0</tracked>
-          </processDependency>
-        </process>
-      </microservice>
-      <process>
-        <processName>Deploy Application</processName>
-        <description>System generated process for microservice application</description>
-        <processType>DEPLOY</processType>
-        <timeLimitUnits>minutes</timeLimitUnits>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>ec_deploy</propertyName>
-            <tracked>0</tracked>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-              <property>
-                <propertyName>ec_notifierStatus</propertyName>
-                <expandable>1</expandable>
-                <suppressValueTracking>0</suppressValueTracking>
-                <tracked>0</tracked>
-                <value>0</value>
-              </property>
-            </propertySheet>
-          </property>
-        </propertySheet>
-        <formalParameter>
-          <formalParameterName>ec_Guestbook-run</formalParameterName>
-          <defaultValue>1</defaultValue>
-          <expansionDeferred>1</expansionDeferred>
-          <required>0</required>
-          <tracked>0</tracked>
-          <type>checkbox</type>
-        </formalParameter>
-        <formalParameter>
-          <formalParameterName>ec_Guestbook_dev-run</formalParameterName>
-          <defaultValue>1</defaultValue>
-          <expansionDeferred>1</expansionDeferred>
-          <required>0</required>
-          <tracked>0</tracked>
-          <type>checkbox</type>
-        </formalParameter>
-        <processStep>
-          <processStepName>Guestbook_dev</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <description>System generated step to invoke microservice process</description>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>process</processStepType>
-          <submicroservice>Guestbook_dev</submicroservice>
-          <submicroserviceProcess>Deploy Microservice Process</submicroserviceProcess>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processStep>
-          <processStepName>Guestbook</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <description>System generated step to invoke microservice process</description>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>process</processStepType>
-          <submicroservice>Guestbook_dev</submicroservice>
-          <submicroserviceProcess>Deploy Microservice Process</submicroserviceProcess>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-      </process>
-      <process>
-        <processName>Uninstall Application</processName>
-        <exclusiveEnvironment>0</exclusiveEnvironment>
-        <processType>UNDEPLOY</processType>
-        <timeLimitUnits>minutes</timeLimitUnits>
-        <tracked>0</tracked>
-        <workspaceName>default</workspaceName>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>ec_deploy</propertyName>
-            <tracked>0</tracked>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-              <property>
-                <propertyName>ec_notifierStatus</propertyName>
-                <expandable>1</expandable>
-                <suppressValueTracking>0</suppressValueTracking>
-                <tracked>0</tracked>
-                <value>0</value>
-              </property>
-            </propertySheet>
-          </property>
-        </propertySheet>
-        <processStep>
-          <processStepName>Delete Release</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <dependencyJoinType>and</dependencyJoinType>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>plugin</processStepType>
-          <subprocedure>Delete Release</subprocedure>
-          <subproject>/plugins/EC-Helm/project</subproject>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>0</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <actualParameters>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>actionOnError</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>0</value>
-            </property>
-            <property>
-              <propertyName>config</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>/projects/Guestbook/pluginConfigurations/helmcfg</value>
-            </property>
-            <property>
-              <propertyName>errorValue</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value></value>
-            </property>
-            <property>
-              <propertyName>options</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>-n dev</value>
-            </property>
-            <property>
-              <propertyName>releaseName</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>my-guestbook</value>
-            </property>
-            <property>
-              <propertyName>resultPropertySheet</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>/myJob/deleteRelease</value>
-            </property>
-          </actualParameters>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processStep>
-          <processStepName>Delete PVC</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <dependencyJoinType>and</dependencyJoinType>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>command</processStepType>
-          <subprocedure>RunCommand</subprocedure>
-          <subproject>/plugins/EC-Core/project</subproject>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <utilityResourceName>local</utilityResourceName>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <actualParameters>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>commandToRun</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>&#10;            kubectl delete pvc -l app.kubernetes.io/instance=my-guestbook -n dev&#10;            kubectl delete ns dev&#10;            </value>
-            </property>
-          </actualParameters>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processDependency>
-          <branchType>ALWAYS</branchType>
-          <source>processStep-658c5424-b8da-11ed-bcc4-029890443bb4</source>
-          <sourceName>Delete Release</sourceName>
-          <target>processStep-6593f554-b8da-11ed-bcc4-029890443bb4</target>
-          <targetName>Delete PVC</targetName>
-          <tracked>0</tracked>
-        </processDependency>
-      </process>
-      <tierMap>
-        <tierMapName>Guestbook_dev_map</tierMapName>
-        <applicationName>Guestbook_dev</applicationName>
-        <environmentName>Guestbook_dev</environmentName>
-        <projectName>Guestbook</projectName>
-        <tracked>0</tracked>
-        <microserviceMapping>
-          <microserviceMappingName>Guestbook_dev_map</microserviceMappingName>
-          <clusterName>Guestbook_dev</clusterName>
-          <clusterProjectName>Guestbook</clusterProjectName>
-          <microserviceName>Guestbook_dev</microserviceName>
-          <tierMapName>Guestbook_dev_map</tierMapName>
-          <tracked>0</tracked>
-        </microserviceMapping>
-      </tierMap>
-    </application>
-    <application>
-      <applicationName>Guestbook_prod</applicationName>
-      <applicationType>microservice</applicationType>
-      <tracked>0</tracked>
-      <acl>
-        <inheriting>1</inheriting>
-        <tracked>0</tracked>
-      </acl>
-      <propertySheet>
-        <credentialProtected>0</credentialProtected>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <property>
-          <propertyName>ec_deploy</propertyName>
-          <tracked>0</tracked>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_notifierStatus</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>0</value>
-            </property>
-          </propertySheet>
-        </property>
-      </propertySheet>
-      <microservice>
-        <microserviceName>Guestbook_prod</microserviceName>
-        <applicationName>Guestbook_prod</applicationName>
-        <definitionSource>helm_repository</definitionSource>
-        <definitionType>helm</definitionType>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <definitionSourceParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>repositoryName</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>guestbook-repo</value>
-          </property>
-          <property>
-            <propertyName>repositoryUrl</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>https://harbor.idtplateer.com/chartrepo/guestbook</value>
-          </property>
-          <property>
-            <propertyName>repository_credential</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>/projects/Guestbook/credentials/harbor_cred</value>
-          </property>
-        </definitionSourceParameters>
-        <deployParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>additionalOptions</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>--create-namespace</value>
-          </property>
-          <property>
-            <propertyName>chart</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>guestbook</value>
-          </property>
-          <property>
-            <propertyName>releaseName</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>my-guestbook</value>
-          </property>
-          <property>
-            <propertyName>values</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  #   drop:&#10;  #   - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;ingress:&#10;  enabled: false&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  #   cpu: 100m&#10;  #   memory: 128Mi&#10;  # requests:&#10;  #   cpu: 100m&#10;  #   memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |- &#10;    appendonly no&#10;  consul:&#10;    enabled: true&#10;&#10;consul:&#10;  enabled: true&#10;&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;</value>
-          </property>
-          <property>
-            <propertyName>version</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>0.1.0</value>
-          </property>
-        </deployParameters>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-        <rollbackParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>rollbackEnabled</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>true</value>
-          </property>
-          <property>
-            <propertyName>waitTimeout</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>300</value>
-          </property>
-        </rollbackParameters>
-        <process>
-          <processName>Deploy Microservice Process</processName>
-          <description>System generated process for microservice deployment</description>
-          <processType>DEPLOY</processType>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-          </propertySheet>
-          <processStep>
-            <processStepName>Retrieve Artifact</processStepName>
-            <alwaysRun>0</alwaysRun>
-            <description>System generated step to retrieve microservice definition artifact</description>
-            <errorHandling>abortJob</errorHandling>
-            <processStepType>plugin</processStepType>
-            <subprocedure>Source Provider</subprocedure>
-            <subproject>/plugins/EC-Helm/project</subproject>
-            <timeLimitUnits>minutes</timeLimitUnits>
-            <tracked>0</tracked>
-            <useUtilityResource>0</useUtilityResource>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-            </propertySheet>
-          </processStep>
-          <processStep>
-            <processStepName>Deploy Microservice</processStepName>
-            <alwaysRun>0</alwaysRun>
-            <description>System generated step to deploy microservice</description>
-            <errorHandling>abortJob</errorHandling>
-            <processStepType>plugin</processStepType>
-            <subprocedure>Deploy Service</subprocedure>
-            <subproject>/plugins/EC-Helm/project</subproject>
-            <timeLimitUnits>minutes</timeLimitUnits>
-            <tracked>0</tracked>
-            <useUtilityResource>0</useUtilityResource>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-            </propertySheet>
-          </processStep>
-          <processDependency>
-            <branchType>ALWAYS</branchType>
-            <source>processStep-6615cf21-b8da-11ed-bcc4-029890443bb4</source>
-            <sourceName>Retrieve Artifact</sourceName>
-            <target>processStep-66192a85-b8da-11ed-bcc4-029890443bb4</target>
-            <targetName>Deploy Microservice</targetName>
-            <tracked>0</tracked>
-          </processDependency>
-        </process>
-      </microservice>
-      <process>
-        <processName>Deploy Application</processName>
-        <description>System generated process for microservice application</description>
-        <processType>DEPLOY</processType>
-        <timeLimitUnits>minutes</timeLimitUnits>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>ec_deploy</propertyName>
-            <tracked>0</tracked>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-              <property>
-                <propertyName>ec_notifierStatus</propertyName>
-                <expandable>1</expandable>
-                <suppressValueTracking>0</suppressValueTracking>
-                <tracked>0</tracked>
-                <value>0</value>
-              </property>
-            </propertySheet>
-          </property>
-        </propertySheet>
-        <formalParameter>
-          <formalParameterName>ec_Guestbook-run</formalParameterName>
-          <defaultValue>1</defaultValue>
-          <expansionDeferred>1</expansionDeferred>
-          <required>0</required>
-          <tracked>0</tracked>
-          <type>checkbox</type>
-        </formalParameter>
-        <formalParameter>
-          <formalParameterName>ec_Guestbook_prod-run</formalParameterName>
-          <defaultValue>1</defaultValue>
-          <expansionDeferred>1</expansionDeferred>
-          <required>0</required>
-          <tracked>0</tracked>
-          <type>checkbox</type>
-        </formalParameter>
-        <processStep>
-          <processStepName>Guestbook_prod</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <description>System generated step to invoke microservice process</description>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>process</processStepType>
-          <submicroservice>Guestbook_prod</submicroservice>
-          <submicroserviceProcess>Deploy Microservice Process</submicroserviceProcess>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processStep>
-          <processStepName>Guestbook</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <description>System generated step to invoke microservice process</description>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>process</processStepType>
-          <submicroservice>Guestbook_prod</submicroservice>
-          <submicroserviceProcess>Deploy Microservice Process</submicroserviceProcess>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-      </process>
-      <process>
-        <processName>Uninstall Application</processName>
-        <exclusiveEnvironment>0</exclusiveEnvironment>
-        <processType>UNDEPLOY</processType>
-        <timeLimitUnits>minutes</timeLimitUnits>
-        <tracked>0</tracked>
-        <workspaceName>default</workspaceName>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>ec_deploy</propertyName>
-            <tracked>0</tracked>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-              <property>
-                <propertyName>ec_notifierStatus</propertyName>
-                <expandable>1</expandable>
-                <suppressValueTracking>0</suppressValueTracking>
-                <tracked>0</tracked>
-                <value>0</value>
-              </property>
-            </propertySheet>
-          </property>
-        </propertySheet>
-        <processStep>
-          <processStepName>Delete Release</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <dependencyJoinType>and</dependencyJoinType>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>plugin</processStepType>
-          <subprocedure>Delete Release</subprocedure>
-          <subproject>/plugins/EC-Helm/project</subproject>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>0</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <actualParameters>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>actionOnError</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>0</value>
-            </property>
-            <property>
-              <propertyName>config</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>/projects/Guestbook/pluginConfigurations/helmcfg</value>
-            </property>
-            <property>
-              <propertyName>errorValue</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value></value>
-            </property>
-            <property>
-              <propertyName>options</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>-n prod</value>
-            </property>
-            <property>
-              <propertyName>releaseName</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>my-guestbook</value>
-            </property>
-            <property>
-              <propertyName>resultPropertySheet</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>/myJob/deleteRelease</value>
-            </property>
-          </actualParameters>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processStep>
-          <processStepName>Delete PVC</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <dependencyJoinType>and</dependencyJoinType>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>command</processStepType>
-          <subprocedure>RunCommand</subprocedure>
-          <subproject>/plugins/EC-Core/project</subproject>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <utilityResourceName>local</utilityResourceName>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <actualParameters>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>commandToRun</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>&#10;            kubectl delete pvc -l app.kubernetes.io/instance=my-guestbook -n prod&#10;            kubectl delete ns prod&#10;            </value>
-            </property>
-          </actualParameters>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processDependency>
-          <branchType>ALWAYS</branchType>
-          <source>processStep-66632bf6-b8da-11ed-bcc4-029890443bb4</source>
-          <sourceName>Delete Release</sourceName>
-          <target>processStep-666bb786-b8da-11ed-bcc4-029890443bb4</target>
-          <targetName>Delete PVC</targetName>
-          <tracked>0</tracked>
-        </processDependency>
-      </process>
-      <tierMap>
-        <tierMapName>Guestbook_prod_map</tierMapName>
-        <applicationName>Guestbook_prod</applicationName>
-        <environmentName>Guestbook_prod</environmentName>
-        <projectName>Guestbook</projectName>
-        <tracked>0</tracked>
-        <microserviceMapping>
-          <microserviceMappingName>Guestbook_prod_map</microserviceMappingName>
-          <clusterName>Guestbook_prod</clusterName>
-          <clusterProjectName>Guestbook</clusterProjectName>
-          <microserviceName>Guestbook_prod</microserviceName>
-          <tierMapName>Guestbook_prod_map</tierMapName>
-          <tracked>0</tracked>
-        </microserviceMapping>
-      </tierMap>
-    </application>
-    <application>
-      <applicationName>Guestbook_qa</applicationName>
-      <applicationType>microservice</applicationType>
-      <tracked>0</tracked>
-      <acl>
-        <inheriting>1</inheriting>
-        <tracked>0</tracked>
-      </acl>
-      <propertySheet>
-        <credentialProtected>0</credentialProtected>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <property>
-          <propertyName>ec_deploy</propertyName>
-          <tracked>0</tracked>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_notifierStatus</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>0</value>
-            </property>
-          </propertySheet>
-        </property>
-      </propertySheet>
-      <microservice>
-        <microserviceName>Guestbook_qa</microserviceName>
-        <applicationName>Guestbook_qa</applicationName>
-        <definitionSource>helm_repository</definitionSource>
-        <definitionType>helm</definitionType>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <definitionSourceParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>repositoryName</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>guestbook-repo</value>
-          </property>
-          <property>
-            <propertyName>repositoryUrl</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>https://harbor.idtplateer.com/chartrepo/guestbook</value>
-          </property>
-          <property>
-            <propertyName>repository_credential</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>/projects/Guestbook/credentials/harbor_cred</value>
-          </property>
-        </definitionSourceParameters>
-        <deployParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>additionalOptions</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>--create-namespace</value>
-          </property>
-          <property>
-            <propertyName>chart</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>guestbook</value>
-          </property>
-          <property>
-            <propertyName>releaseName</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>my-guestbook</value>
-          </property>
-          <property>
-            <propertyName>values</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>&#10;# -- Override the name of the chart.&#10;nameOverride: ""&#10;# -- Override the fullname of the chart.&#10;fullnameOverride: ""&#10;&#10;# -- Replica count.&#10;replicaCount: 1&#10;&#10;image:&#10;  # -- Image repository.&#10;  repository: gcr.io/google-samples/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: v5&#10;&#10;# -- Image pull secrets.&#10;imagePullSecrets: []&#10;&#10;serviceAccount:&#10;  # -- Specifies whether a service account should be created.&#10;  create: true&#10;  # -- Annotations to add to the service account.&#10;  annotations: {}&#10;  # If not set and create is true, a name is generated using the fullname template&#10;  # -- The name of the service account to use.&#10;  name: ""&#10;&#10;# -- Annotations to add to the pod.&#10;podAnnotations: {}&#10;&#10;# -- Security context for the pod.&#10;podSecurityContext: {}&#10;  # fsGroup: 2000&#10;&#10;# -- Security context for the container.&#10;securityContext: {}&#10;  # capabilities:&#10;  #   drop:&#10;  #   - ALL&#10;  # readOnlyRootFilesystem: true&#10;  # runAsNonRoot: true&#10;  # runAsUser: 1000&#10;&#10;&#10;service:&#10;  # -- Service type.&#10;  type: ClusterIP&#10;  # -- Service port.&#10;  port: 80&#10;&#10;# -- Resource requests and limits.&#10;resources: {}&#10;  # We usually recommend not to specify default resources and to leave this as a conscious&#10;  # choice for the user. This also increases chances charts run on environments with little&#10;  # resources, such as Minikube. If you do want to specify resources, uncomment the following&#10;  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.&#10;  # limits:&#10;  #   cpu: 100m&#10;  #   memory: 128Mi&#10;  # requests:&#10;  #   cpu: 100m&#10;  #   memory: 128Mi&#10;&#10;autoscaling:&#10;  # -- If true, create a HPA for the deployment.&#10;  enabled: false&#10;  # -- Minimum number of pod replicas.&#10;  minReplicas: 1&#10;  # -- Maximum number of pod replicas.&#10;  maxReplicas: 10&#10;  # -- Target CPU utilisation for the pod.&#10;  targetCPUUtilizationPercentage: 50&#10;  # -- Target memory utilisation for the pod.&#10;  targetMemoryUtilizationPercentage: 50&#10;&#10;# -- Node labels for pod assignment.&#10;nodeSelector: {}&#10;&#10;# -- Tolerations for pod assignment.&#10;tolerations: []&#10;&#10;# -- Affinity for pod assignment.&#10;affinity: {}&#10;&#10;redis:&#10;  architecture: standalone&#10;  enabled: true&#10;  auth:&#10;    enabled: false&#10;  master:&#10;    persistence:&#10;      enabled: true&#10;  commonConfiguration: |- &#10;    appendonly no&#10;consul:&#10;  enabled: false&#10;&#10;imagenew:&#10;  # -- Image repository.&#10;  repository: harbor.idtplateer.com/guestbook/gb-frontend&#10;  # -- Image pull policy.&#10;  pullPolicy: IfNotPresent&#10;  # -- Image tag.&#10;  tag: latest&#10;&#10;&#10;ingress:&#10;  enabled: true&#10;  ingressClassName: 'guestbook'&#10;  annotations:&#10;    alb.ingress.kubernetes.io/load-balancer-name: 'guestbook'&#10;    alb.ingress.kubernetes.io/scheme: 'internet-facing'&#10;    alb.ingress.kubernetes.io/target-type: ip&#10;    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80,"HTTPS":443}]'&#10;    alb.ingress.kubernetes.io/certificate-arn: 'arn:aws:acm:ap-northeast-2:960249453675:certificate/3915d0da-6dd2-4384-8fb0-558b25bf1ff4'&#10;    alb.ingress.kubernetes.io/ssl-policy: 'ELBSecurityPolicy-TLS-1-2-Ext-2018-06'&#10;    alb.ingress.kubernetes.io/actions.ssl-redirect: '443'&#10;    external-dns.alpha.kubernetes.io/hostname: 'qagb.idtplateer.com'&#10;  hosts:&#10;    - host: 'qagb.idtplateer.com'&#10;      paths:&#10;        - path: "/"&#10;          pathType: Prefix&#10;  tls:&#10;    - hosts:&#10;      - 'qagb.idtplateer.com'&#10;</value>
-          </property>
-          <property>
-            <propertyName>version</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>0.1.0</value>
-          </property>
-        </deployParameters>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-        </propertySheet>
-        <rollbackParameters>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>rollbackEnabled</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>true</value>
-          </property>
-          <property>
-            <propertyName>waitTimeout</propertyName>
-            <expandable>1</expandable>
-            <suppressValueTracking>0</suppressValueTracking>
-            <tracked>0</tracked>
-            <value>300</value>
-          </property>
-        </rollbackParameters>
-        <process>
-          <processName>Deploy Microservice Process</processName>
-          <description>System generated process for microservice deployment</description>
-          <processType>DEPLOY</processType>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-          </propertySheet>
-          <processStep>
-            <processStepName>Retrieve Artifact</processStepName>
-            <alwaysRun>0</alwaysRun>
-            <description>System generated step to retrieve microservice definition artifact</description>
-            <errorHandling>abortJob</errorHandling>
-            <processStepType>plugin</processStepType>
-            <subprocedure>Source Provider</subprocedure>
-            <subproject>/plugins/EC-Helm/project</subproject>
-            <timeLimitUnits>minutes</timeLimitUnits>
-            <tracked>0</tracked>
-            <useUtilityResource>0</useUtilityResource>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-            </propertySheet>
-          </processStep>
-          <processStep>
-            <processStepName>Deploy Microservice</processStepName>
-            <alwaysRun>0</alwaysRun>
-            <description>System generated step to deploy microservice</description>
-            <errorHandling>abortJob</errorHandling>
-            <processStepType>plugin</processStepType>
-            <subprocedure>Deploy Service</subprocedure>
-            <subproject>/plugins/EC-Helm/project</subproject>
-            <timeLimitUnits>minutes</timeLimitUnits>
-            <tracked>0</tracked>
-            <useUtilityResource>0</useUtilityResource>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-            </propertySheet>
-          </processStep>
-          <processDependency>
-            <branchType>ALWAYS</branchType>
-            <source>processStep-65aea978-b8da-11ed-bcc4-029890443bb4</source>
-            <sourceName>Retrieve Artifact</sourceName>
-            <target>processStep-65b1418c-b8da-11ed-bcc4-029890443bb4</target>
-            <targetName>Deploy Microservice</targetName>
-            <tracked>0</tracked>
-          </processDependency>
-        </process>
-      </microservice>
-      <process>
-        <processName>Deploy Application</processName>
-        <description>System generated process for microservice application</description>
-        <processType>DEPLOY</processType>
-        <timeLimitUnits>minutes</timeLimitUnits>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>ec_deploy</propertyName>
-            <tracked>0</tracked>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-              <property>
-                <propertyName>ec_notifierStatus</propertyName>
-                <expandable>1</expandable>
-                <suppressValueTracking>0</suppressValueTracking>
-                <tracked>0</tracked>
-                <value>0</value>
-              </property>
-            </propertySheet>
-          </property>
-        </propertySheet>
-        <formalParameter>
-          <formalParameterName>ec_Guestbook-run</formalParameterName>
-          <defaultValue>1</defaultValue>
-          <expansionDeferred>1</expansionDeferred>
-          <required>0</required>
-          <tracked>0</tracked>
-          <type>checkbox</type>
-        </formalParameter>
-        <formalParameter>
-          <formalParameterName>ec_Guestbook_qa-run</formalParameterName>
-          <defaultValue>1</defaultValue>
-          <expansionDeferred>1</expansionDeferred>
-          <required>0</required>
-          <tracked>0</tracked>
-          <type>checkbox</type>
-        </formalParameter>
-        <processStep>
-          <processStepName>Guestbook_qa</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <description>System generated step to invoke microservice process</description>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>process</processStepType>
-          <submicroservice>Guestbook_qa</submicroservice>
-          <submicroserviceProcess>Deploy Microservice Process</submicroserviceProcess>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processStep>
-          <processStepName>Guestbook</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <description>System generated step to invoke microservice process</description>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>process</processStepType>
-          <submicroservice>Guestbook_qa</submicroservice>
-          <submicroserviceProcess>Deploy Microservice Process</submicroserviceProcess>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-      </process>
-      <process>
-        <processName>Uninstall Application</processName>
-        <exclusiveEnvironment>0</exclusiveEnvironment>
-        <processType>UNDEPLOY</processType>
-        <timeLimitUnits>minutes</timeLimitUnits>
-        <tracked>0</tracked>
-        <workspaceName>default</workspaceName>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <propertySheet>
-          <credentialProtected>0</credentialProtected>
-          <tracked>0</tracked>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <property>
-            <propertyName>ec_deploy</propertyName>
-            <tracked>0</tracked>
-            <propertySheet>
-              <credentialProtected>0</credentialProtected>
-              <tracked>0</tracked>
-              <acl>
-                <inheriting>1</inheriting>
-                <tracked>0</tracked>
-              </acl>
-              <property>
-                <propertyName>ec_notifierStatus</propertyName>
-                <expandable>1</expandable>
-                <suppressValueTracking>0</suppressValueTracking>
-                <tracked>0</tracked>
-                <value>0</value>
-              </property>
-            </propertySheet>
-          </property>
-        </propertySheet>
-        <processStep>
-          <processStepName>Delete Release</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <dependencyJoinType>and</dependencyJoinType>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>plugin</processStepType>
-          <subprocedure>Delete Release</subprocedure>
-          <subproject>/plugins/EC-Helm/project</subproject>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>0</useUtilityResource>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <actualParameters>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>actionOnError</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>0</value>
-            </property>
-            <property>
-              <propertyName>config</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>/projects/Guestbook/pluginConfigurations/helmcfg</value>
-            </property>
-            <property>
-              <propertyName>errorValue</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value></value>
-            </property>
-            <property>
-              <propertyName>options</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>-n qa</value>
-            </property>
-            <property>
-              <propertyName>releaseName</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>my-guestbook</value>
-            </property>
-            <property>
-              <propertyName>resultPropertySheet</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>/myJob/deleteRelease</value>
-            </property>
-          </actualParameters>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processStep>
-          <processStepName>Delete PVC</processStepName>
-          <alwaysRun>0</alwaysRun>
-          <dependencyJoinType>and</dependencyJoinType>
-          <errorHandling>abortJob</errorHandling>
-          <processStepType>command</processStepType>
-          <subprocedure>RunCommand</subprocedure>
-          <subproject>/plugins/EC-Core/project</subproject>
-          <timeLimitUnits>minutes</timeLimitUnits>
-          <tracked>0</tracked>
-          <useUtilityResource>1</useUtilityResource>
-          <utilityResourceName>local</utilityResourceName>
-          <acl>
-            <inheriting>1</inheriting>
-            <tracked>0</tracked>
-          </acl>
-          <actualParameters>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>commandToRun</propertyName>
-              <expandable>1</expandable>
-              <suppressValueTracking>0</suppressValueTracking>
-              <tracked>0</tracked>
-              <value>&#10;            kubectl delete pvc -l app.kubernetes.io/instance=my-guestbook -n qa&#10;            kubectl delete ns qa&#10;            </value>
-            </property>
-          </actualParameters>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
-            <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-            <property>
-              <propertyName>ec_deploy</propertyName>
-              <tracked>0</tracked>
-              <propertySheet>
-                <credentialProtected>0</credentialProtected>
-                <tracked>0</tracked>
-                <acl>
-                  <inheriting>1</inheriting>
-                  <tracked>0</tracked>
-                </acl>
-                <property>
-                  <propertyName>ec_notifierStatus</propertyName>
-                  <expandable>1</expandable>
-                  <suppressValueTracking>0</suppressValueTracking>
-                  <tracked>0</tracked>
-                  <value>0</value>
-                </property>
-              </propertySheet>
-            </property>
-          </propertySheet>
-        </processStep>
-        <processDependency>
-          <branchType>ALWAYS</branchType>
-          <source>processStep-65f0467d-b8da-11ed-bcc4-029890443bb4</source>
-          <sourceName>Delete Release</sourceName>
-          <target>processStep-65f835cd-b8da-11ed-bcc4-029890443bb4</target>
-          <targetName>Delete PVC</targetName>
-          <tracked>0</tracked>
-        </processDependency>
-      </process>
-      <tierMap>
-        <tierMapName>Guestbook_qa_map</tierMapName>
-        <applicationName>Guestbook_qa</applicationName>
-        <environmentName>Guestbook_qa</environmentName>
-        <projectName>Guestbook</projectName>
-        <tracked>0</tracked>
-        <microserviceMapping>
-          <microserviceMappingName>Guestbook_qa_map</microserviceMappingName>
-          <clusterName>Guestbook_qa</clusterName>
-          <clusterProjectName>Guestbook</clusterProjectName>
-          <microserviceName>Guestbook_qa</microserviceName>
-          <tierMapName>Guestbook_qa_map</tierMapName>
-          <tracked>0</tracked>
-        </microserviceMapping>
-      </tierMap>
-    </application>
     <pipeline>
       <pipelineName>Guestbook_Pipeline</pipelineName>
       <disableMultipleActiveRuns>0</disableMultipleActiveRuns>
@@ -2549,7 +575,7 @@
         <tracked>0</tracked>
       </acl>
       <flow>
-        <flowName>2cf1cd91-b8e1-11ed-a4e4-029890443bb4_pipelineflow</flowName>
+        <flowName>fb4fda81-bd93-11ed-b1b9-0282f7abfbfa_pipelineflow</flowName>
         <tracked>0</tracked>
         <acl>
           <inheriting>1</inheriting>
@@ -2572,7 +598,7 @@
           <flowStateType>task</flowStateType>
           <index>0</index>
           <keepOnError>0</keepOnError>
-          <subflow>2cfb91a8-b8e1-11ed-a4e4-029890443bb4_pregateflow</subflow>
+          <subflow>fb5ef62b-bd93-11ed-b1b9-0282f7abfbfa_pregateflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2618,7 +644,7 @@
           <flowStateType>task</flowStateType>
           <index>1</index>
           <keepOnError>0</keepOnError>
-          <subflow>2cfb437b-b8e1-11ed-a4e4-029890443bb4_stageflow</subflow>
+          <subflow>fb5d2159-bd93-11ed-b1b9-0282f7abfbfa_stageflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2663,7 +689,7 @@
           <flowStateType>task</flowStateType>
           <index>2</index>
           <keepOnError>0</keepOnError>
-          <subflow>2cfb91ac-b8e1-11ed-a4e4-029890443bb4_postgateflow</subflow>
+          <subflow>fb5fe097-bd93-11ed-b1b9-0282f7abfbfa_postgateflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2690,7 +716,7 @@
           <flowStateType>task</flowStateType>
           <index>3</index>
           <keepOnError>0</keepOnError>
-          <subflow>2d1b4ee0-b8e1-11ed-a4e4-029890443bb4_pregateflow</subflow>
+          <subflow>fb607cfb-bd93-11ed-b1b9-0282f7abfbfa_pregateflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2736,7 +762,7 @@
           <flowStateType>task</flowStateType>
           <index>4</index>
           <keepOnError>0</keepOnError>
-          <subflow>2d1b00b3-b8e1-11ed-a4e4-029890443bb4_stageflow</subflow>
+          <subflow>fb607ce9-bd93-11ed-b1b9-0282f7abfbfa_stageflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2781,7 +807,7 @@
           <flowStateType>task</flowStateType>
           <index>5</index>
           <keepOnError>0</keepOnError>
-          <subflow>2d1b4ee4-b8e1-11ed-a4e4-029890443bb4_postgateflow</subflow>
+          <subflow>fb60a417-bd93-11ed-b1b9-0282f7abfbfa_postgateflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2808,7 +834,7 @@
           <flowStateType>task</flowStateType>
           <index>6</index>
           <keepOnError>0</keepOnError>
-          <subflow>2d3e1958-b8e1-11ed-a4e4-029890443bb4_pregateflow</subflow>
+          <subflow>fb60a43b-bd93-11ed-b1b9-0282f7abfbfa_pregateflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2854,7 +880,7 @@
           <flowStateType>task</flowStateType>
           <index>7</index>
           <keepOnError>0</keepOnError>
-          <subflow>2d3dcb2b-b8e1-11ed-a4e4-029890443bb4_stageflow</subflow>
+          <subflow>fb60a429-bd93-11ed-b1b9-0282f7abfbfa_stageflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2899,7 +925,7 @@
           <flowStateType>task</flowStateType>
           <index>8</index>
           <keepOnError>0</keepOnError>
-          <subflow>2d3e195c-b8e1-11ed-a4e4-029890443bb4_postgateflow</subflow>
+          <subflow>fb60a447-bd93-11ed-b1b9-0282f7abfbfa_postgateflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -2944,7 +970,7 @@
           <tracked>0</tracked>
         </acl>
         <flow>
-          <flowName>2cfb437b-b8e1-11ed-a4e4-029890443bb4_stageflow</flowName>
+          <flowName>fb5d2159-bd93-11ed-b1b9-0282f7abfbfa_stageflow</flowName>
           <tracked>0</tracked>
           <acl>
             <inheriting>1</inheriting>
@@ -2998,7 +1024,7 @@
           </acl>
         </propertySheet>
         <gate>
-          <gateName>2cfb91a8-b8e1-11ed-a4e4-029890443bb4</gateName>
+          <gateName>fb5ef62b-bd93-11ed-b1b9-0282f7abfbfa</gateName>
           <flowStateName>2d02bda4-b8e1-11ed-a4e4-029890443bb4_pre_gate_flow_state</flowStateName>
           <gateType>PRE</gateType>
           <stageName>Dev</stageName>
@@ -3008,7 +1034,7 @@
             <tracked>0</tracked>
           </acl>
           <flow>
-            <flowName>2cfb91a8-b8e1-11ed-a4e4-029890443bb4_pregateflow</flowName>
+            <flowName>fb5ef62b-bd93-11ed-b1b9-0282f7abfbfa_pregateflow</flowName>
             <tracked>0</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -3033,7 +1059,7 @@
           </propertySheet>
         </gate>
         <gate>
-          <gateName>2cfb91ac-b8e1-11ed-a4e4-029890443bb4</gateName>
+          <gateName>fb5fe097-bd93-11ed-b1b9-0282f7abfbfa</gateName>
           <flowStateName>2d094d61-b8e1-11ed-a4e4-029890443bb4_post_gate_flow_state</flowStateName>
           <gateType>POST</gateType>
           <stageName>Dev</stageName>
@@ -3043,7 +1069,7 @@
             <tracked>0</tracked>
           </acl>
           <flow>
-            <flowName>2cfb91ac-b8e1-11ed-a4e4-029890443bb4_postgateflow</flowName>
+            <flowName>fb5fe097-bd93-11ed-b1b9-0282f7abfbfa_postgateflow</flowName>
             <tracked>0</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -3102,7 +1128,7 @@
           <tracked>0</tracked>
         </acl>
         <flow>
-          <flowName>2d1b00b3-b8e1-11ed-a4e4-029890443bb4_stageflow</flowName>
+          <flowName>fb607ce9-bd93-11ed-b1b9-0282f7abfbfa_stageflow</flowName>
           <tracked>0</tracked>
           <acl>
             <inheriting>1</inheriting>
@@ -3156,7 +1182,7 @@
           </acl>
         </propertySheet>
         <gate>
-          <gateName>2d1b4ee0-b8e1-11ed-a4e4-029890443bb4</gateName>
+          <gateName>fb607cfb-bd93-11ed-b1b9-0282f7abfbfa</gateName>
           <flowStateName>2d22c8fc-b8e1-11ed-a4e4-029890443bb4_pre_gate_flow_state</flowStateName>
           <gateType>PRE</gateType>
           <stageName>QA</stageName>
@@ -3166,7 +1192,7 @@
             <tracked>0</tracked>
           </acl>
           <flow>
-            <flowName>2d1b4ee0-b8e1-11ed-a4e4-029890443bb4_pregateflow</flowName>
+            <flowName>fb607cfb-bd93-11ed-b1b9-0282f7abfbfa_pregateflow</flowName>
             <tracked>0</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -3191,7 +1217,7 @@
           </propertySheet>
         </gate>
         <gate>
-          <gateName>2d1b4ee4-b8e1-11ed-a4e4-029890443bb4</gateName>
+          <gateName>fb60a417-bd93-11ed-b1b9-0282f7abfbfa</gateName>
           <flowStateName>2d2a4319-b8e1-11ed-a4e4-029890443bb4_post_gate_flow_state</flowStateName>
           <gateType>POST</gateType>
           <stageName>QA</stageName>
@@ -3201,7 +1227,7 @@
             <tracked>0</tracked>
           </acl>
           <flow>
-            <flowName>2d1b4ee4-b8e1-11ed-a4e4-029890443bb4_postgateflow</flowName>
+            <flowName>fb60a417-bd93-11ed-b1b9-0282f7abfbfa_postgateflow</flowName>
             <tracked>0</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -3260,7 +1286,7 @@
           <tracked>0</tracked>
         </acl>
         <flow>
-          <flowName>2d3dcb2b-b8e1-11ed-a4e4-029890443bb4_stageflow</flowName>
+          <flowName>fb60a429-bd93-11ed-b1b9-0282f7abfbfa_stageflow</flowName>
           <tracked>0</tracked>
           <acl>
             <inheriting>1</inheriting>
@@ -3314,7 +1340,7 @@
           </acl>
         </propertySheet>
         <gate>
-          <gateName>2d3e1958-b8e1-11ed-a4e4-029890443bb4</gateName>
+          <gateName>fb60a43b-bd93-11ed-b1b9-0282f7abfbfa</gateName>
           <flowStateName>2d45e194-b8e1-11ed-a4e4-029890443bb4_pre_gate_flow_state</flowStateName>
           <gateType>PRE</gateType>
           <stageName>Production</stageName>
@@ -3324,7 +1350,7 @@
             <tracked>0</tracked>
           </acl>
           <flow>
-            <flowName>2d3e1958-b8e1-11ed-a4e4-029890443bb4_pregateflow</flowName>
+            <flowName>fb60a43b-bd93-11ed-b1b9-0282f7abfbfa_pregateflow</flowName>
             <tracked>0</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -3349,7 +1375,7 @@
           </propertySheet>
         </gate>
         <gate>
-          <gateName>2d3e195c-b8e1-11ed-a4e4-029890443bb4</gateName>
+          <gateName>fb60a447-bd93-11ed-b1b9-0282f7abfbfa</gateName>
           <flowStateName>2d4d0d91-b8e1-11ed-a4e4-029890443bb4_post_gate_flow_state</flowStateName>
           <gateType>POST</gateType>
           <stageName>Production</stageName>
@@ -3359,7 +1385,7 @@
             <tracked>0</tracked>
           </acl>
           <flow>
-            <flowName>2d3e195c-b8e1-11ed-a4e4-029890443bb4_postgateflow</flowName>
+            <flowName>fb60a447-bd93-11ed-b1b9-0282f7abfbfa_postgateflow</flowName>
             <tracked>0</tracked>
             <acl>
               <inheriting>1</inheriting>
@@ -3421,7 +1447,7 @@
         <tracked>0</tracked>
       </acl>
       <flow>
-        <flowName>04fd96d4-b8db-11ed-bcc4-029890443bb4_pipelineflow</flowName>
+        <flowName>fb60ca69-bd93-11ed-b1b9-0282f7abfbfa_pipelineflow</flowName>
         <tracked>0</tracked>
         <acl>
           <inheriting>1</inheriting>
@@ -3445,7 +1471,7 @@
           <flowStateType>task</flowStateType>
           <index>0</index>
           <keepOnError>0</keepOnError>
-          <subflow>050cffcc-b8db-11ed-81dd-029890443bb4_stageflow</subflow>
+          <subflow>fb6166bd-bd93-11ed-b1b9-0282f7abfbfa_stageflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -3490,7 +1516,7 @@
           <tracked>0</tracked>
         </acl>
         <flow>
-          <flowName>050cffcc-b8db-11ed-81dd-029890443bb4_stageflow</flowName>
+          <flowName>fb6166bd-bd93-11ed-b1b9-0282f7abfbfa_stageflow</flowName>
           <tracked>0</tracked>
           <acl>
             <inheriting>1</inheriting>
@@ -3543,7 +1569,7 @@
           </acl>
         </propertySheet>
         <gate>
-          <gateName>050d9c19-b8db-11ed-81dd-029890443bb4</gateName>
+          <gateName>fb618ddf-bd93-11ed-b1b9-0282f7abfbfa</gateName>
           <gateType>PRE</gateType>
           <stageName>Stage 1</stageName>
           <tracked>0</tracked>
@@ -3561,7 +1587,7 @@
           </propertySheet>
         </gate>
         <gate>
-          <gateName>050dc32d-b8db-11ed-81dd-029890443bb4</gateName>
+          <gateName>fb618de5-bd93-11ed-b1b9-0282f7abfbfa</gateName>
           <gateType>POST</gateType>
           <stageName>Stage 1</stageName>
           <tracked>0</tracked>
