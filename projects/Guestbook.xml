@@ -42,7 +42,7 @@
       <secretEnginePath>jenkins</secretEnginePath>
       <secretEngineType>KV2</secretEngineType>
       <secretId></secretId>
-      <serverUrl>https://vt.idtplateer.com</serverUrl>
+      <serverUrl>https://vault.idtplateer.com</serverUrl>
       <token></token>
       <tracked>0</tracked>
       <userName>dev</userName>
