@@ -38,7 +38,7 @@ fi
 
 echo "Import Projects"
   
-if [ ! -f /tmp/project_import_ready ]; then
+if [ ! -f $PWD/project_import_ready ]; then
 
   for file in $PWD/projects/*.xml; do
     ectool import --file "$file" --force 1
@@ -55,7 +55,7 @@ if [ ! -f /tmp/project_import_ready ]; then
     ectool createAclEntry user "project: $projectName" --systemObjectName workspaces --executePrivilege allow --readPrivilege allow --modifyPrivilege allow --changePermissionsPrivilege allow
   done
 
-  touch /tmp/project_import_ready
+  touch $PWD/project_import_ready
 fi
 
 echo "Import DSL files"
