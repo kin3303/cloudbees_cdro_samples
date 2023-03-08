@@ -19,19 +19,19 @@ ectool --server $server login admin changeme
 echo "Create Sample Resources"
 
 if [ ! -f $PWD/demo_prod_agents_ready ]; then
-  ectool createResource PROD --hostName local
+  ectool createResource PROD --hostName localhost
   ectool pingResource PROD
   touch $PWD/demo_prod_agents_ready
 fi
 
 if [ ! -f $PWD/demo_dev_agents_ready ]; then
-  ectool createResource DEV --hostName  local 
+  ectool createResource DEV --hostName  localhost 
   ectool pingResource DEV
   touch $PWD/demo_dev_agents_ready
 fi
 
 if [ ! -f $PWD/demo_qa_agents_ready ]; then
-  ectool createResource QA --hostName  local 
+  ectool createResource QA --hostName  localhost 
   ectool pingResource QA
   touch $PWD/demo_qa_agents_ready
 fi
