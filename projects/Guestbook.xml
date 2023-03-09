@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<exportedData version="107" buildLabel="build_10.4_153852_2022.03.22_08:16:02" buildVersion="10.4.2.153852" passkey="9d223e54b763614904254e63b3a6b0e7eb0c89a9">
+<exportedData version="107" buildLabel="build_10.4_153852_2022.03.22_08:16:02" buildVersion="10.4.2.153852" passkey="fd0131a943575ff3d02a55e287c03262afd566d5">
   <exportPath>/projects/Guestbook</exportPath>
   <project>
     <projectName>Guestbook</projectName>
@@ -355,9 +355,9 @@
         <stepName>Collect Prod Results</stepName>
         <alwaysRun>0</alwaysRun>
         <broadcast>0</broadcast>
-        <command>ectool setProperty /myPipelineStageRuntime/ec_summary/v1 '&lt;html&gt;&lt;a href="https://ci.idtplateer.com:8080/"&gt;V1&lt;/a&gt;&lt;/html&gt;'&#10;ectool setProperty /myStageRuntime/v1 "https://ci.idtplateer.com:8080/"&#10;&#10;ectool setProperty /myPipelineStageRuntime/ec_summary/v2 '&lt;html&gt;&lt;a href="https://ci.idtplateer.com:8080?canary=true/"&gt;V2&lt;/a&gt;&lt;/html&gt;'&#10;ectool setProperty /myStageRuntime/v1 "https://ci.idtplateer.com:8080?canary=true/"&#10;</command>
+        <command>ectool setProperty /myPipelineStageRuntime/ec_summary/prod-v2 '&lt;html&gt;&lt;a href="http://ci.idtplateer.com:8080/"&gt;Prod-V2&lt;/a&gt;&lt;/html&gt;'&#10;ectool setProperty /myStageRuntime/prod-v2 "http://ci.idtplateer.com:8080/"&#10; &#10;ectool setProperty /myPipelineStageRuntime/ec_summary/consul '&lt;html&gt;&lt;a href="https://cs.idtplateer.com/"&gt;Consul&lt;/a&gt;&lt;/html&gt;'&#10;ectool setProperty /myStageRuntime/consul "https://cs.idtplateer.com/"&#10;&#10;ectool setProperty /myPipelineStageRuntime/ec_summary/vault '&lt;html&gt;&lt;a href="https://vault.idtplateer.com/"&gt;Vault&lt;/a&gt;&lt;/html&gt;'&#10;ectool setProperty /myStageRuntime/vault "https://vault.idtplateer.com/"&#10;&#10;ectool setProperty /myPipelineStageRuntime/ec_summary/prometheus '&lt;html&gt;&lt;a href="https://ps.idtplateer.com/"&gt;Prometheus&lt;/a&gt;&lt;/html&gt;'&#10;ectool setProperty /myStageRuntime/prometheus "https://ps.idtplateer.com/"</command>
         <condition></condition>
-        <description># https://ci.idtplateer.com:8080  &gt;&gt;  V1 로 접근&#10;# https://ci.idtplateer.com:8080?canary=true &gt;&gt; 모두 V2 로 접근</description>
+        <description># https://ci.idtplateer.com:8080  </description>
         <errorHandling>failProcedure</errorHandling>
         <exclusiveMode>none</exclusiveMode>
         <logFileName></logFileName>
@@ -699,7 +699,7 @@
         <stepName>createPipeline</stepName>
         <alwaysRun>0</alwaysRun>
         <broadcast>0</broadcast>
-        <command>def projName  = "$[/myProject/projectName]"&#10;def pipeName = "$[/myProject/projectName]_Pipeline"&#10;def envs = ["dev","qa","prod"]&#10;&#10;pipeline pipeName, {&#10;  projectName = projName&#10;&#10;  formalParameter 'ec_stagesToRun', {&#10;    expansionDeferred = '1'&#10;  }&#10;  &#10;  envs.each { env -&gt;&#10;  &#10;    def envName = (String)"${projName}_${env}"&#10;    def isDev = env.toLowerCase().contains("dev")&#10;    def isQA = env.toLowerCase().contains("qa")&#10;    def isProd = env.toLowerCase().contains("prod")&#10;    def stageColor = ''&#10;    def stageName = ''&#10;    def deployAppDispName = ''&#10;    def collectQAResultDispName = ''&#10;    def undeployAppDispName = ''&#10;&#10;    if(isDev) {&#10;        stageColor = '#ff7f0e'&#10;        stageName = "Dev"&#10;        deployAppDispName = "Deploy Dev App"&#10;        collectQAResultDispName = "Collect Dev Result"&#10;        undeployAppDispName = "Undeploy Dev App"&#10;    } else if (isQA) {&#10;        stageColor = '#2ca02c'&#10;        stageName = "QA"&#10;        deployAppDispName = "Deploy QA App"&#10;        collectQAResultDispName = "Collect QA Result"&#10;        undeployAppDispName = "Undeploy QA App"&#10;    } else {&#10;        stageColor = '#289ce1'&#10;        stageName = "Production"&#10;        deployAppDispName = "Deploy Prod App"&#10;        collectQAResultDispName = "Collect Prod Result"&#10;        undeployAppDispName = "Undeploy Prod App"&#10;    }&#10;&#10;    stage stageName, {&#10;        colorCode = stageColor&#10;        pipelineName = pipeName&#10;        gate 'PRE', {&#10;        }&#10;&#10;        gate 'POST', {&#10;        }&#10;&#10;        task deployAppDispName, {&#10;            environmentName = envName&#10;            environmentProjectName = projName&#10;            rollingDeployEnabled = '0'&#10;            subapplication = envName&#10;            subprocess = 'Deploy Application'&#10;            subproject = projName&#10;            taskProcessType = 'APPLICATION'&#10;            taskType = 'PROCESS'&#10;        }&#10;    &#10;        task collectQAResultDispName, {&#10;            description = ''&#10;            taskType = 'PROCEDURE'&#10;            subproject = 'Guestbook'&#10;            subprocedure = 'CollectQAResult'&#10;            errorHandling = 'stopOnError'&#10;        }&#10;        &#10;        task 'Check Result', {&#10;            taskType = 'MANUAL'&#10;            approver = [&#10;              'admin',&#10;            ]&#10;        }        &#10;        &#10;        task undeployAppDispName, {&#10;            environmentName = envName&#10;            environmentProjectName = projName&#10;            rollingDeployEnabled = '0'&#10;            subapplication = envName&#10;            subprocess = 'Uninstall Application'&#10;            subproject = projName&#10;            taskProcessType = 'APPLICATION'&#10;            taskType = 'PROCESS'&#10;        }        &#10;    }&#10;  }&#10;}</command>
+        <command>def projName  = "$[/myProject/projectName]"&#10;def pipeName = "$[/myProject/projectName]_Pipeline"&#10;def envs = ["dev","qa","prod"]&#10;&#10;pipeline pipeName, {&#10;  projectName = projName&#10;&#10;  formalParameter 'ec_stagesToRun', {&#10;    expansionDeferred = '1'&#10;  }&#10;  &#10;  envs.each { env -&gt;&#10;  &#10;    def envName = (String)"${projName}_${env}"&#10;    def isDev = env.toLowerCase().contains("dev")&#10;    def isQA = env.toLowerCase().contains("qa")&#10;    def isProd = env.toLowerCase().contains("prod")&#10;    def stageColor = ''&#10;    def stageName = ''&#10;    def deployAppDispName = ''&#10;    def collectQAResultDispName = ''&#10;    def undeployAppDispName = ''&#10;&#10;    if(isDev) {&#10;        stageColor = '#ff7f0e'&#10;        stageName = "Dev"&#10;        deployAppDispName = "Deploy Dev App"&#10;        collectQAResultDispName = "Collect Dev Result"&#10;        undeployAppDispName = "Undeploy Dev App"&#10;        collectProcedureName = "CollectDevResult"&#10;    } else if (isQA) {&#10;        stageColor = '#2ca02c'&#10;        stageName = "QA"&#10;        deployAppDispName = "Deploy QA App"&#10;        collectQAResultDispName = "Collect QA Result"&#10;        undeployAppDispName = "Undeploy QA App"&#10;        collectProcedureName = "CollectQAResult"&#10;    } else {&#10;        stageColor = '#289ce1'&#10;        stageName = "Production"&#10;        deployAppDispName = "Deploy Prod App"&#10;        collectQAResultDispName = "Collect Prod Result"&#10;        undeployAppDispName = "Undeploy Prod App"&#10;        collectProcedureName = "CollectProdResult"&#10;    }&#10;&#10;    stage stageName, {&#10;        colorCode = stageColor&#10;        pipelineName = pipeName&#10;        gate 'PRE', {&#10;        }&#10;&#10;        gate 'POST', {&#10;        }&#10;&#10;        task deployAppDispName, {&#10;            environmentName = envName&#10;            environmentProjectName = projName&#10;            rollingDeployEnabled = '0'&#10;            subapplication = envName&#10;            subprocess = 'Deploy Application'&#10;            subproject = projName&#10;            taskProcessType = 'APPLICATION'&#10;            taskType = 'PROCESS'&#10;        }&#10;    &#10;        task collectQAResultDispName, {&#10;            description = ''&#10;            taskType = 'PROCEDURE'&#10;            subproject = 'Guestbook'&#10;            subprocedure = collectProcedureName&#10;            errorHandling = 'stopOnError'&#10;        }&#10;        &#10;        task 'Check Result', {&#10;            taskType = 'MANUAL'&#10;            approver = [&#10;              'admin',&#10;            ]&#10;        }        &#10;        &#10;        task undeployAppDispName, {&#10;            environmentName = envName&#10;            environmentProjectName = projName&#10;            rollingDeployEnabled = '0'&#10;            subapplication = envName&#10;            subprocess = 'Uninstall Application'&#10;            subproject = projName&#10;            taskProcessType = 'APPLICATION'&#10;            taskType = 'PROCESS'&#10;        }        &#10;    }&#10;  }&#10;}</command>
         <condition></condition>
         <description>def projName  = "$[/myProject/projectName]"&#10;def pipeName = "$[/myProject/projectName]_Pipeline"&#10;def envs = ["dev","qa","prod"]&#10;&#10;pipeline pipeName, {&#10;  projectName = projName&#10;&#10;  formalParameter 'ec_stagesToRun', {&#10;    expansionDeferred = '1'&#10;  }&#10;  &#10;  envs.each { env -&gt;&#10;  &#10;    def envName = (String)"${projName}_${env}"&#10;    def isDev = env.toLowerCase().contains("dev")&#10;    def isQA = env.toLowerCase().contains("qa")&#10;    def isProd = env.toLowerCase().contains("prod")&#10;    def stageColor = ''&#10;    def stageName = ''&#10;&#10;    if(isDev) {&#10;        stageColor = '#ff7f0e'&#10;        stageName = "Dev"&#10;    } else if (isQA) {&#10;        stageColor = '#2ca02c'&#10;        stageName = "QA"&#10;    } else {&#10;        stageColor = '#289ce1'&#10;        stageName = "Production"&#10;    }&#10;&#10;    stage stageName, {&#10;        colorCode = stageColor&#10;        pipelineName = pipeName&#10;        gate 'PRE', {&#10;        }&#10;&#10;        gate 'POST', {&#10;        }&#10;&#10;        task 'Deploy App', {&#10;        environmentName = envName&#10;        environmentProjectName = projName&#10;        rollingDeployEnabled = '0'&#10;        subapplication = envName&#10;        subprocess = 'Deploy Application'&#10;        subproject = projName&#10;        taskProcessType = 'APPLICATION'&#10;        taskType = 'PROCESS'&#10;        }&#10;    }&#10;  }&#10;}</description>
         <errorHandling>failProcedure</errorHandling>
@@ -800,7 +800,7 @@
         <tracked>0</tracked>
       </acl>
       <flow>
-        <flowName>458a97f8-bdbe-11ed-88e6-024a035405d8_pipelineflow</flowName>
+        <flowName>e9f55222-bdcc-11ed-bab8-02cb2147b44c_pipelineflow</flowName>
         <tracked>0</tracked>
         <acl>
           <inheriting>1</inheriting>
@@ -824,7 +824,7 @@
           <flowStateType>task</flowStateType>
           <index>0</index>
           <keepOnError>0</keepOnError>
-          <subflow>458abf1c-bdbe-11ed-88e6-024a035405d8_stageflow</subflow>
+          <subflow>e9f726f6-bdcc-11ed-bab8-02cb2147b44c_stageflow</subflow>
           <tracked>0</tracked>
           <useApproverAcl>0</useApproverAcl>
           <waitForCompletion>0</waitForCompletion>
@@ -869,7 +869,7 @@
           <tracked>0</tracked>
         </acl>
         <flow>
-          <flowName>458abf1c-bdbe-11ed-88e6-024a035405d8_stageflow</flowName>
+          <flowName>e9f726f6-bdcc-11ed-bab8-02cb2147b44c_stageflow</flowName>
           <tracked>0</tracked>
           <acl>
             <inheriting>1</inheriting>
@@ -922,7 +922,7 @@
           </acl>
         </propertySheet>
         <gate>
-          <gateName>458b0d4e-bdbe-11ed-88e6-024a035405d8</gateName>
+          <gateName>e9f8fbc8-bdcc-11ed-bab8-02cb2147b44c</gateName>
           <gateType>PRE</gateType>
           <stageName>Stage 1</stageName>
           <tracked>0</tracked>
@@ -940,7 +940,7 @@
           </propertySheet>
         </gate>
         <gate>
-          <gateName>458b0d54-bdbe-11ed-88e6-024a035405d8</gateName>
+          <gateName>e9f970fe-bdcc-11ed-bab8-02cb2147b44c</gateName>
           <gateType>POST</gateType>
           <stageName>Stage 1</stageName>
           <tracked>0</tracked>
