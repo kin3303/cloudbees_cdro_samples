@@ -1344,6 +1344,15 @@
         <required>0</required>
         <tracked>0</tracked>
       </formalParameter>
+      <formalParameter>
+        <formalParameterName>Trigger_Param</formalParameterName>
+        <defaultValue>$[/timestamp yyyy/MM/dd]</defaultValue>
+        <expansionDeferred>0</expansionDeferred>
+        <orderIndex>1</orderIndex>
+        <required>0</required>
+        <tracked>0</tracked>
+        <type>entry</type>
+      </formalParameter>
       <stage>
         <stageName>Stage 1</stageName>
         <completed>1</completed>
@@ -1604,6 +1613,94 @@
           </propertySheet>
         </task>
       </stage>
+      <trigger>
+        <triggerName>TEST_SW</triggerName>
+        <pipelineName>Guestbook_CI_Pipeline</pipelineName>
+        <pluginKey>Trigger-Property</pluginKey>
+        <projectName>Guestbook</projectName>
+        <quietTimeMinutes>0</quietTimeMinutes>
+        <runDuplicates>0</runDuplicates>
+        <tracked>0</tracked>
+        <triggerEnabled>1</triggerEnabled>
+        <triggerType>polling</triggerType>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
+        <actualParameters>
+          <credentialProtected>0</credentialProtected>
+          <tracked>0</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+          <property>
+            <propertyName>Trigger_Param</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>$[/timestamp yyyy/MM/dd]</value>
+          </property>
+          <property>
+            <propertyName>ec_stagesToRun</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>["Stage 1"]</value>
+          </property>
+        </actualParameters>
+        <pluginParameters>
+          <credentialProtected>0</credentialProtected>
+          <tracked>0</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+          <property>
+            <propertyName>propName</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>Trigger_Param</value>
+          </property>
+        </pluginParameters>
+        <propertySheet>
+          <credentialProtected>0</credentialProtected>
+          <tracked>0</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+          <property>
+            <propertyName>ec_trigger_state</propertyName>
+            <tracked>0</tracked>
+            <propertySheet>
+              <credentialProtected>0</credentialProtected>
+              <tracked>0</tracked>
+              <acl>
+                <inheriting>1</inheriting>
+                <tracked>0</tracked>
+                <aclEntry>
+                  <allowChangePermissions>0</allowChangePermissions>
+                  <allowExecute>1</allowExecute>
+                  <allowModify>1</allowModify>
+                  <allowRead>1</allowRead>
+                  <denyChangePermissions>1</denyChangePermissions>
+                  <denyExecute>0</denyExecute>
+                  <denyModify>0</denyModify>
+                  <denyRead>0</denyRead>
+                  <principalName>Everyone</principalName>
+                  <principalType>group</principalType>
+                  <tracked>0</tracked>
+                </aclEntry>
+              </acl>
+            </propertySheet>
+          </property>
+        </propertySheet>
+        <triggerErrorDetail>
+          <errorMessage>Failed to get property Trigger_Param: agent.H1YXMBTDPVP3CUKZ.run-543cf9ca-c239-11ed-82ab-022a475a9b3a-544425e1-c239-11ed-97f0-022a475a9b3a error [NoSuchProperty]: Property 'Trigger_Param' does not exist&#10;    Details:&#10;    Evaluating property 'Trigger_Param' in project 'Guestbook'&#10;    No such property: 'Trigger_Param'&#10;    Evaluation failed&#10;    Found no match in any context&#10;</errorMessage>
+        </triggerErrorDetail>
+      </trigger>
     </pipeline>
     <pipeline>
       <pipelineName>Test</pipelineName>
