@@ -597,9 +597,9 @@
         <stepName>createMicroservices</stepName>
         <alwaysRun>0</alwaysRun>
         <broadcast>0</broadcast>
-        <command>def projName = "$[/myProject/projectName]"&#10;def envs = ["plateer"]&#10;def resources = []&#10;def environments = []&#10;def helmValues = ''&#10;def appName = ''&#10;def envName = '' &#10;&#10;envs.each { env -&gt;&#10;&#10;    appName = (String)"${projName}_${env}"&#10;    envName = (String)"${env}"&#10;&#10;    application appName, {&#10;        applicationType = 'microservice'&#10;        projectName = projName&#10;&#10;        microservice appName, {&#10;            applicationName = appName&#10;&#10;            definitionSource = 'helm_repository'&#10;&#10;            definitionSourceParameter = [&#10;                'repository_credential': '/projects/Hashicup/credentials/harbor_cred',&#10;                'repositoryName': 'hashicup-repo',&#10;                'repositoryUrl': 'https://harbor.idtplateer.com/chartrepo/hashicup',&#10;            ]&#10;&#10;            definitionType = 'helm'&#10;&#10;            deployParameter = [&#10;                'additionalOptions': '--create-namespace',&#10;                'chart': 'hashicup',&#10;                'releaseName': 'my-hashicup',&#10;                'version': '0.1.0',&#10;                'values': helmValues,&#10;            ]&#10;&#10;            rollbackParameter = [&#10;                'rollbackEnabled': 'true',&#10;                'waitTimeout': '300',&#10;            ]&#10;        }&#10;&#10;        process 'Deploy Application', {&#10;            description = 'System generated process for microservice application'&#10;            applicationName = appName&#10;            processType = 'DEPLOY'&#10;            formalParameter 'ec_Hashicup-run', defaultValue: '1', {&#10;                expansionDeferred = '1'&#10;                type = 'checkbox'&#10;            }&#10;            &#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        process 'Uninstall Application', {&#10;            applicationName = appName&#10;            exclusiveEnvironment = '0'&#10;            processType = 'UNDEPLOY'&#10;            workspaceName = 'default'&#10;&#10;            processStep 'Delete Release', {&#10;                actualParameter = [&#10;                    'actionOnError': '0',&#10;                    'config': '/projects/Hashicup/pluginConfigurations/helmcfg',&#10;                    'errorValue': '',&#10;                    'options': (String)"-n ${envName}",&#10;                    'releaseName': 'my-hashicup',&#10;                    'resultPropertySheet': '/myJob/deleteRelease',&#10;                ]&#10;                dependencyJoinType = 'and'&#10;                processStepType = 'plugin'&#10;                subprocedure = 'Delete Release'&#10;                subproject = '/plugins/EC-Helm/project'&#10;&#10;                property 'ec_deploy', {&#10;                    ec_notifierStatus = '0'&#10;                }&#10;            }&#10;&#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        property 'ec_deploy', {&#10;            ec_notifierStatus = '0'&#10;        }&#10;    }&#10;}</command>
+        <command>def projName = "$[/myProject/projectName]"&#10;def envs = ["plateer"]&#10;def resources = []&#10;def environments = []&#10;def helmValues = ''&#10;def appName = ''&#10;def envName = '' &#10;&#10;envs.each { env -&gt;&#10;&#10;    appName = (String)"${projName}_${env}"&#10;    envName = (String)"${env}"&#10;&#10;    application appName, {&#10;        applicationType = 'microservice'&#10;        projectName = projName&#10;&#10;        microservice appName, {&#10;            applicationName = appName&#10;&#10;            definitionSource = 'helm_repository'&#10;&#10;            definitionSourceParameter = [&#10;                'repository_credential': '/projects/Hashicup/credentials/harbor_cred',&#10;                'repositoryName': 'hashicup-repo',&#10;                'repositoryUrl': 'https://harbor.idtplateer.com/chartrepo/hashicup',&#10;            ]&#10;&#10;            definitionType = 'helm'&#10;&#10;            deployParameter = [&#10;                'additionalOptions': '--create-namespace',&#10;                'chart': 'hashicup',&#10;                'releaseName': 'my-hashicup',&#10;                'version': '0.1.0',&#10;                'values': helmValues,&#10;            ]&#10;&#10;            rollbackParameter = [&#10;                'rollbackEnabled': 'true',&#10;                'waitTimeout': '300',&#10;            ]&#10;        }&#10;&#10;        process 'Deploy Application', {&#10;            description = 'System generated process for microservice application'&#10;            applicationName = appName&#10;            processType = 'DEPLOY'&#10;            formalParameter 'ec_Hashicup-run', defaultValue: '1', {&#10;                expansionDeferred = '1'&#10;                type = 'checkbox'&#10;            }&#10;            &#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        process 'Uninstall Application', {&#10;            applicationName = appName&#10;            exclusiveEnvironment = '0'&#10;            processType = 'UNDEPLOY'&#10;            workspaceName = 'default'&#10;&#10;            processStep 'Delete Release', {&#10;                actualParameter = [&#10;                    'actionOnError': '0',&#10;                    'config': '/projects/Hashicup/pluginConfigurations/helmcfg',&#10;                    'errorValue': '',&#10;                    'options': (String)"-n ${envName}",&#10;                    'releaseName': 'my-hashicup',&#10;                    'resultPropertySheet': '/myJob/deleteRelease',&#10;                ]&#10;                dependencyJoinType = 'and'&#10;                processStepType = 'plugin'&#10;                subprocedure = 'Delete Release'&#10;                subproject = '/plugins/EC-Helm/project'&#10;&#10;                property 'ec_deploy', {&#10;                    ec_notifierStatus = '0'&#10;                }&#10;            }&#10;&#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;        &#10;&#10;        process 'Junk Process', {&#10;          applicationName = appName&#10;          exclusiveEnvironment = '0'&#10;          processType = 'OTHER'&#10;          workspaceName = 'default'&#10;&#10;          processStep 'Junk', {&#10;            actualParameter = [&#10;              'commandToRun': (String)"""&#10;              echo "nothing"&#10;              """,&#10;            ]&#10;            dependencyJoinType = 'and'&#10;            processStepType = 'command'&#10;            subprocedure = 'RunCommand'&#10;            subproject = '/plugins/EC-Core/project'&#10;            useUtilityResource = '1'&#10;            utilityResourceName = 'local'&#10;            property 'ec_deploy', {&#10;              ec_notifierStatus = '0'&#10;            }&#10;          }&#10;          property 'ec_deploy', {&#10;           ec_notifierStatus = '0'&#10;          }&#10;        } &#10;&#10;        property 'ec_deploy', {&#10;            ec_notifierStatus = '0'&#10;        }&#10;    }&#10;}</command>
         <condition></condition>
-        <description></description>
+        <description>def projName = "$[/myProject/projectName]"&#10;def envs = ["plateer"]&#10;def resources = []&#10;def environments = []&#10;def helmValues = ''&#10;def appName = ''&#10;def envName = '' &#10;&#10;envs.each { env -&gt;&#10;&#10;    appName = (String)"${projName}_${env}"&#10;    envName = (String)"${env}"&#10;&#10;    application appName, {&#10;        applicationType = 'microservice'&#10;        projectName = projName&#10;&#10;        microservice appName, {&#10;            applicationName = appName&#10;&#10;            definitionSource = 'helm_repository'&#10;&#10;            definitionSourceParameter = [&#10;                'repository_credential': '/projects/Hashicup/credentials/harbor_cred',&#10;                'repositoryName': 'hashicup-repo',&#10;                'repositoryUrl': 'https://harbor.idtplateer.com/chartrepo/hashicup',&#10;            ]&#10;&#10;            definitionType = 'helm'&#10;&#10;            deployParameter = [&#10;                'additionalOptions': '--create-namespace',&#10;                'chart': 'hashicup',&#10;                'releaseName': 'my-hashicup',&#10;                'version': '0.1.0',&#10;                'values': helmValues,&#10;            ]&#10;&#10;            rollbackParameter = [&#10;                'rollbackEnabled': 'true',&#10;                'waitTimeout': '300',&#10;            ]&#10;        }&#10;&#10;        process 'Deploy Application', {&#10;            description = 'System generated process for microservice application'&#10;            applicationName = appName&#10;            processType = 'DEPLOY'&#10;            formalParameter 'ec_Hashicup-run', defaultValue: '1', {&#10;                expansionDeferred = '1'&#10;                type = 'checkbox'&#10;            }&#10;            &#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        process 'Uninstall Application', {&#10;            applicationName = appName&#10;            exclusiveEnvironment = '0'&#10;            processType = 'UNDEPLOY'&#10;            workspaceName = 'default'&#10;&#10;            processStep 'Delete Release', {&#10;                actualParameter = [&#10;                    'actionOnError': '0',&#10;                    'config': '/projects/Hashicup/pluginConfigurations/helmcfg',&#10;                    'errorValue': '',&#10;                    'options': (String)"-n ${envName}",&#10;                    'releaseName': 'my-hashicup',&#10;                    'resultPropertySheet': '/myJob/deleteRelease',&#10;                ]&#10;                dependencyJoinType = 'and'&#10;                processStepType = 'plugin'&#10;                subprocedure = 'Delete Release'&#10;                subproject = '/plugins/EC-Helm/project'&#10;&#10;                property 'ec_deploy', {&#10;                    ec_notifierStatus = '0'&#10;                }&#10;            }&#10;&#10;            property 'ec_deploy', {&#10;                ec_notifierStatus = '0'&#10;            }&#10;        }&#10;&#10;        property 'ec_deploy', {&#10;            ec_notifierStatus = '0'&#10;        }&#10;    }&#10;}</description>
         <errorHandling>failProcedure</errorHandling>
         <exclusiveMode>none</exclusiveMode>
         <logFileName></logFileName>
@@ -799,26 +799,123 @@
         </propertySheet>
       </step>
     </procedure>
-    <pipeline>
-      <pipelineName>Test</pipelineName>
-      <description></description>
-      <disableMultipleActiveRuns>0</disableMultipleActiveRuns>
-      <disableRestart>0</disableRestart>
-      <overrideWorkspace>0</overrideWorkspace>
-      <pipelineEnabled>1</pipelineEnabled>
-      <skipStageMode>ENABLED</skipStageMode>
+    <application>
+      <applicationName>Hashicup_plateer</applicationName>
+      <applicationType>microservice</applicationType>
       <tracked>0</tracked>
       <acl>
         <inheriting>1</inheriting>
         <tracked>0</tracked>
       </acl>
-      <flow>
-        <flowName>edcab52d-c215-11ed-8af2-022a475a9b3a_pipelineflow</flowName>
+      <propertySheet>
+        <credentialProtected>0</credentialProtected>
         <tracked>0</tracked>
         <acl>
           <inheriting>1</inheriting>
           <tracked>0</tracked>
         </acl>
+        <property>
+          <propertyName>ec_deploy</propertyName>
+          <tracked>0</tracked>
+          <propertySheet>
+            <credentialProtected>0</credentialProtected>
+            <tracked>0</tracked>
+            <acl>
+              <inheriting>1</inheriting>
+              <tracked>0</tracked>
+            </acl>
+            <property>
+              <propertyName>ec_notifierStatus</propertyName>
+              <expandable>1</expandable>
+              <suppressValueTracking>0</suppressValueTracking>
+              <tracked>0</tracked>
+              <value>0</value>
+            </property>
+          </propertySheet>
+        </property>
+      </propertySheet>
+      <microservice>
+        <microserviceName>Hashicup_plateer</microserviceName>
+        <applicationName>Hashicup_plateer</applicationName>
+        <definitionSource>helm_repository</definitionSource>
+        <definitionType>helm</definitionType>
+        <tracked>0</tracked>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
+        <definitionSourceParameters>
+          <credentialProtected>0</credentialProtected>
+          <tracked>0</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+          <property>
+            <propertyName>repositoryName</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>hashicup-repo</value>
+          </property>
+          <property>
+            <propertyName>repositoryUrl</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>https://harbor.idtplateer.com/chartrepo/hashicup</value>
+          </property>
+          <property>
+            <propertyName>repository_credential</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>/projects/Hashicup/credentials/harbor_cred</value>
+          </property>
+        </definitionSourceParameters>
+        <deployParameters>
+          <credentialProtected>0</credentialProtected>
+          <tracked>0</tracked>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+          <property>
+            <propertyName>additionalOptions</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>--create-namespace</value>
+          </property>
+          <property>
+            <propertyName>chart</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>hashicup</value>
+          </property>
+          <property>
+            <propertyName>releaseName</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>my-hashicup</value>
+          </property>
+          <property>
+            <propertyName>values</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value></value>
+          </property>
+          <property>
+            <propertyName>version</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>0.1.0</value>
+          </property>
+        </deployParameters>
         <propertySheet>
           <credentialProtected>0</credentialProtected>
           <tracked>0</tracked>
@@ -827,62 +924,33 @@
             <tracked>0</tracked>
           </acl>
         </propertySheet>
-        <flowState>
-          <flowStateName>050d4df4-b8db-11ed-81dd-029890443bb4_stage_flow_state</flowStateName>
-          <advancedMode>0</advancedMode>
-          <alwaysRun>0</alwaysRun>
-          <colorCode>#289ce1</colorCode>
-          <deployerTask>0</deployerTask>
-          <description>stage flow step</description>
-          <flowStateType>task</flowStateType>
-          <index>0</index>
-          <keepOnError>0</keepOnError>
-          <subflow>edccb111-c215-11ed-8af2-022a475a9b3a_stageflow</subflow>
+        <rollbackParameters>
+          <credentialProtected>0</credentialProtected>
           <tracked>0</tracked>
-          <useApproverAcl>0</useApproverAcl>
-          <waitForCompletion>0</waitForCompletion>
-          <waitForPlannedStart>0</waitForPlannedStart>
           <acl>
             <inheriting>1</inheriting>
             <tracked>0</tracked>
           </acl>
-          <propertySheet>
-            <credentialProtected>0</credentialProtected>
+          <property>
+            <propertyName>rollbackEnabled</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
             <tracked>0</tracked>
-            <acl>
-              <inheriting>1</inheriting>
-              <tracked>0</tracked>
-            </acl>
-          </propertySheet>
-        </flowState>
-      </flow>
-      <propertySheet>
-        <credentialProtected>0</credentialProtected>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-      </propertySheet>
-      <formalParameter>
-        <formalParameterName>ec_stagesToRun</formalParameterName>
-        <expansionDeferred>1</expansionDeferred>
-        <required>0</required>
-        <tracked>0</tracked>
-      </formalParameter>
-      <stage>
-        <stageName>Stage 1</stageName>
-        <completed>0</completed>
-        <completionType>auto</completionType>
-        <flowStateName>050d4df4-b8db-11ed-81dd-029890443bb4_stage_flow_state</flowStateName>
-        <pipelineName>Test</pipelineName>
-        <tracked>0</tracked>
-        <acl>
-          <inheriting>1</inheriting>
-          <tracked>0</tracked>
-        </acl>
-        <flow>
-          <flowName>edccb111-c215-11ed-8af2-022a475a9b3a_stageflow</flowName>
+            <value>true</value>
+          </property>
+          <property>
+            <propertyName>waitTimeout</propertyName>
+            <expandable>1</expandable>
+            <suppressValueTracking>0</suppressValueTracking>
+            <tracked>0</tracked>
+            <value>300</value>
+          </property>
+        </rollbackParameters>
+        <process>
+          <processName>Deploy Microservice Process</processName>
+          <description>System generated process for microservice deployment</description>
+          <processType>DEPLOY</processType>
+          <timeLimitUnits>minutes</timeLimitUnits>
           <tracked>0</tracked>
           <acl>
             <inheriting>1</inheriting>
@@ -896,22 +964,16 @@
               <tracked>0</tracked>
             </acl>
           </propertySheet>
-          <flowState>
-            <flowStateName>0a5aba1f-b8db-11ed-a4e4-029890443bb4_task_flow_state</flowStateName>
-            <advancedMode>0</advancedMode>
+          <processStep>
+            <processStepName>Retrieve Artifact</processStepName>
             <alwaysRun>0</alwaysRun>
-            <deployerTask>1</deployerTask>
-            <description></description>
-            <errorHandling>stopOnError</errorHandling>
-            <flowStateType>task</flowStateType>
-            <index>0</index>
-            <keepOnError>0</keepOnError>
-            <resourceName></resourceName>
-            <runType>serial</runType>
+            <description>System generated step to retrieve microservice definition artifact</description>
+            <errorHandling>abortJob</errorHandling>
+            <processStepType>plugin</processStepType>
+            <subprocedure>Source Provider</subprocedure>
+            <subproject>/plugins/EC-Helm/project</subproject>
             <tracked>0</tracked>
-            <useApproverAcl>0</useApproverAcl>
-            <waitForCompletion>0</waitForCompletion>
-            <waitForPlannedStart>0</waitForPlannedStart>
+            <useUtilityResource>0</useUtilityResource>
             <acl>
               <inheriting>1</inheriting>
               <tracked>0</tracked>
@@ -924,8 +986,50 @@
                 <tracked>0</tracked>
               </acl>
             </propertySheet>
-          </flowState>
-        </flow>
+          </processStep>
+          <processStep>
+            <processStepName>Deploy Microservice</processStepName>
+            <alwaysRun>0</alwaysRun>
+            <description>System generated step to deploy microservice</description>
+            <errorHandling>abortJob</errorHandling>
+            <processStepType>plugin</processStepType>
+            <subprocedure>Deploy Service</subprocedure>
+            <subproject>/plugins/EC-Helm/project</subproject>
+            <tracked>0</tracked>
+            <useUtilityResource>0</useUtilityResource>
+            <acl>
+              <inheriting>1</inheriting>
+              <tracked>0</tracked>
+            </acl>
+            <propertySheet>
+              <credentialProtected>0</credentialProtected>
+              <tracked>0</tracked>
+              <acl>
+                <inheriting>1</inheriting>
+                <tracked>0</tracked>
+              </acl>
+            </propertySheet>
+          </processStep>
+          <processDependency>
+            <branchType>ALWAYS</branchType>
+            <source>processStep-1655476f-c3c3-11ed-9cf2-022a475a9b3a</source>
+            <sourceName>Retrieve Artifact</sourceName>
+            <target>processStep-16574343-c3c3-11ed-9cf2-022a475a9b3a</target>
+            <targetName>Deploy Microservice</targetName>
+            <tracked>0</tracked>
+          </processDependency>
+        </process>
+      </microservice>
+      <process>
+        <processName>Deploy Application</processName>
+        <description>System generated process for microservice application</description>
+        <processType>DEPLOY</processType>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>0</tracked>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
         <propertySheet>
           <credentialProtected>0</credentialProtected>
           <tracked>0</tracked>
@@ -933,12 +1037,52 @@
             <inheriting>1</inheriting>
             <tracked>0</tracked>
           </acl>
+          <property>
+            <propertyName>ec_deploy</propertyName>
+            <tracked>0</tracked>
+            <propertySheet>
+              <credentialProtected>0</credentialProtected>
+              <tracked>0</tracked>
+              <acl>
+                <inheriting>1</inheriting>
+                <tracked>0</tracked>
+              </acl>
+              <property>
+                <propertyName>ec_notifierStatus</propertyName>
+                <expandable>1</expandable>
+                <suppressValueTracking>0</suppressValueTracking>
+                <tracked>0</tracked>
+                <value>0</value>
+              </property>
+            </propertySheet>
+          </property>
         </propertySheet>
-        <gate>
-          <gateName>edceacf3-c215-11ed-8af2-022a475a9b3a</gateName>
-          <gateType>PRE</gateType>
-          <stageName>Stage 1</stageName>
+        <formalParameter>
+          <formalParameterName>ec_Hashicup-run</formalParameterName>
+          <defaultValue>1</defaultValue>
+          <expansionDeferred>1</expansionDeferred>
+          <required>0</required>
           <tracked>0</tracked>
+          <type>checkbox</type>
+        </formalParameter>
+        <formalParameter>
+          <formalParameterName>ec_Hashicup_plateer-run</formalParameterName>
+          <defaultValue>1</defaultValue>
+          <expansionDeferred>1</expansionDeferred>
+          <required>0</required>
+          <tracked>0</tracked>
+          <type>checkbox</type>
+        </formalParameter>
+        <processStep>
+          <processStepName>Hashicup_plateer</processStepName>
+          <alwaysRun>0</alwaysRun>
+          <description>System generated step to invoke microservice process</description>
+          <errorHandling>abortJob</errorHandling>
+          <processStepType>process</processStepType>
+          <submicroservice>Hashicup_plateer</submicroservice>
+          <submicroserviceProcess>Deploy Microservice Process</submicroserviceProcess>
+          <tracked>0</tracked>
+          <useUtilityResource>1</useUtilityResource>
           <acl>
             <inheriting>1</inheriting>
             <tracked>0</tracked>
@@ -950,17 +1094,97 @@
               <inheriting>1</inheriting>
               <tracked>0</tracked>
             </acl>
+            <property>
+              <propertyName>ec_deploy</propertyName>
+              <tracked>0</tracked>
+              <propertySheet>
+                <credentialProtected>0</credentialProtected>
+                <tracked>0</tracked>
+                <acl>
+                  <inheriting>1</inheriting>
+                  <tracked>0</tracked>
+                </acl>
+                <property>
+                  <propertyName>ec_notifierStatus</propertyName>
+                  <expandable>1</expandable>
+                  <suppressValueTracking>0</suppressValueTracking>
+                  <tracked>0</tracked>
+                  <value>0</value>
+                </property>
+              </propertySheet>
+            </property>
           </propertySheet>
-        </gate>
-        <gate>
-          <gateName>edcf2229-c215-11ed-8af2-022a475a9b3a</gateName>
-          <gateType>POST</gateType>
-          <stageName>Stage 1</stageName>
+        </processStep>
+      </process>
+      <process>
+        <processName>Junk Process</processName>
+        <exclusiveEnvironment>0</exclusiveEnvironment>
+        <processType>OTHER</processType>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>0</tracked>
+        <workspaceName>default</workspaceName>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
+        <propertySheet>
+          <credentialProtected>0</credentialProtected>
           <tracked>0</tracked>
           <acl>
             <inheriting>1</inheriting>
             <tracked>0</tracked>
           </acl>
+          <property>
+            <propertyName>ec_deploy</propertyName>
+            <tracked>0</tracked>
+            <propertySheet>
+              <credentialProtected>0</credentialProtected>
+              <tracked>0</tracked>
+              <acl>
+                <inheriting>1</inheriting>
+                <tracked>0</tracked>
+              </acl>
+              <property>
+                <propertyName>ec_notifierStatus</propertyName>
+                <expandable>1</expandable>
+                <suppressValueTracking>0</suppressValueTracking>
+                <tracked>0</tracked>
+                <value>0</value>
+              </property>
+            </propertySheet>
+          </property>
+        </propertySheet>
+        <processStep>
+          <processStepName>Junk</processStepName>
+          <alwaysRun>0</alwaysRun>
+          <dependencyJoinType>and</dependencyJoinType>
+          <errorHandling>abortJob</errorHandling>
+          <processStepType>command</processStepType>
+          <subprocedure>RunCommand</subprocedure>
+          <subproject>/plugins/EC-Core/project</subproject>
+          <timeLimitUnits>minutes</timeLimitUnits>
+          <tracked>0</tracked>
+          <useUtilityResource>1</useUtilityResource>
+          <utilityResourceName>local</utilityResourceName>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+          <actualParameters>
+            <credentialProtected>0</credentialProtected>
+            <tracked>0</tracked>
+            <acl>
+              <inheriting>1</inheriting>
+              <tracked>0</tracked>
+            </acl>
+            <property>
+              <propertyName>commandToRun</propertyName>
+              <expandable>1</expandable>
+              <suppressValueTracking>0</suppressValueTracking>
+              <tracked>0</tracked>
+              <value>&#10;              echo "nothing"&#10;              </value>
+            </property>
+          </actualParameters>
           <propertySheet>
             <credentialProtected>0</credentialProtected>
             <tracked>0</tracked>
@@ -968,21 +1192,131 @@
               <inheriting>1</inheriting>
               <tracked>0</tracked>
             </acl>
+            <property>
+              <propertyName>ec_deploy</propertyName>
+              <tracked>0</tracked>
+              <propertySheet>
+                <credentialProtected>0</credentialProtected>
+                <tracked>0</tracked>
+                <acl>
+                  <inheriting>1</inheriting>
+                  <tracked>0</tracked>
+                </acl>
+                <property>
+                  <propertyName>ec_notifierStatus</propertyName>
+                  <expandable>1</expandable>
+                  <suppressValueTracking>0</suppressValueTracking>
+                  <tracked>0</tracked>
+                  <value>0</value>
+                </property>
+              </propertySheet>
+            </property>
           </propertySheet>
-        </gate>
-        <task>
-          <taskName>Test</taskName>
-          <allowOutOfOrderRun>0</allowOutOfOrderRun>
-          <description></description>
-          <flowStateName>0a5aba1f-b8db-11ed-a4e4-029890443bb4_task_flow_state</flowStateName>
-          <taskEnabled>1</taskEnabled>
-          <taskSkippable>0</taskSkippable>
-          <taskType>DEPLOYER</taskType>
+        </processStep>
+      </process>
+      <process>
+        <processName>Uninstall Application</processName>
+        <exclusiveEnvironment>0</exclusiveEnvironment>
+        <processType>UNDEPLOY</processType>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <tracked>0</tracked>
+        <workspaceName>default</workspaceName>
+        <acl>
+          <inheriting>1</inheriting>
+          <tracked>0</tracked>
+        </acl>
+        <propertySheet>
+          <credentialProtected>0</credentialProtected>
           <tracked>0</tracked>
           <acl>
             <inheriting>1</inheriting>
             <tracked>0</tracked>
           </acl>
+          <property>
+            <propertyName>ec_deploy</propertyName>
+            <tracked>0</tracked>
+            <propertySheet>
+              <credentialProtected>0</credentialProtected>
+              <tracked>0</tracked>
+              <acl>
+                <inheriting>1</inheriting>
+                <tracked>0</tracked>
+              </acl>
+              <property>
+                <propertyName>ec_notifierStatus</propertyName>
+                <expandable>1</expandable>
+                <suppressValueTracking>0</suppressValueTracking>
+                <tracked>0</tracked>
+                <value>0</value>
+              </property>
+            </propertySheet>
+          </property>
+        </propertySheet>
+        <processStep>
+          <processStepName>Delete Release</processStepName>
+          <alwaysRun>0</alwaysRun>
+          <dependencyJoinType>and</dependencyJoinType>
+          <errorHandling>abortJob</errorHandling>
+          <processStepType>plugin</processStepType>
+          <subprocedure>Delete Release</subprocedure>
+          <subproject>/plugins/EC-Helm/project</subproject>
+          <timeLimitUnits>minutes</timeLimitUnits>
+          <tracked>0</tracked>
+          <useUtilityResource>0</useUtilityResource>
+          <acl>
+            <inheriting>1</inheriting>
+            <tracked>0</tracked>
+          </acl>
+          <actualParameters>
+            <credentialProtected>0</credentialProtected>
+            <tracked>0</tracked>
+            <acl>
+              <inheriting>1</inheriting>
+              <tracked>0</tracked>
+            </acl>
+            <property>
+              <propertyName>actionOnError</propertyName>
+              <expandable>1</expandable>
+              <suppressValueTracking>0</suppressValueTracking>
+              <tracked>0</tracked>
+              <value>0</value>
+            </property>
+            <property>
+              <propertyName>config</propertyName>
+              <expandable>1</expandable>
+              <suppressValueTracking>0</suppressValueTracking>
+              <tracked>0</tracked>
+              <value>/projects/Hashicup/pluginConfigurations/helmcfg</value>
+            </property>
+            <property>
+              <propertyName>errorValue</propertyName>
+              <expandable>1</expandable>
+              <suppressValueTracking>0</suppressValueTracking>
+              <tracked>0</tracked>
+              <value></value>
+            </property>
+            <property>
+              <propertyName>options</propertyName>
+              <expandable>1</expandable>
+              <suppressValueTracking>0</suppressValueTracking>
+              <tracked>0</tracked>
+              <value>-n plateer</value>
+            </property>
+            <property>
+              <propertyName>releaseName</propertyName>
+              <expandable>1</expandable>
+              <suppressValueTracking>0</suppressValueTracking>
+              <tracked>0</tracked>
+              <value>my-hashicup</value>
+            </property>
+            <property>
+              <propertyName>resultPropertySheet</propertyName>
+              <expandable>1</expandable>
+              <suppressValueTracking>0</suppressValueTracking>
+              <tracked>0</tracked>
+              <value>/myJob/deleteRelease</value>
+            </property>
+          </actualParameters>
           <propertySheet>
             <credentialProtected>0</credentialProtected>
             <tracked>0</tracked>
@@ -990,9 +1324,43 @@
               <inheriting>1</inheriting>
               <tracked>0</tracked>
             </acl>
+            <property>
+              <propertyName>ec_deploy</propertyName>
+              <tracked>0</tracked>
+              <propertySheet>
+                <credentialProtected>0</credentialProtected>
+                <tracked>0</tracked>
+                <acl>
+                  <inheriting>1</inheriting>
+                  <tracked>0</tracked>
+                </acl>
+                <property>
+                  <propertyName>ec_notifierStatus</propertyName>
+                  <expandable>1</expandable>
+                  <suppressValueTracking>0</suppressValueTracking>
+                  <tracked>0</tracked>
+                  <value>0</value>
+                </property>
+              </propertySheet>
+            </property>
           </propertySheet>
-        </task>
-      </stage>
-    </pipeline>
+        </processStep>
+      </process>
+      <tierMap>
+        <tierMapName>Hashicup_plateer_map</tierMapName>
+        <applicationName>Hashicup_plateer</applicationName>
+        <environmentName>Hashicup_plateer</environmentName>
+        <projectName>Hashicup</projectName>
+        <tracked>0</tracked>
+        <microserviceMapping>
+          <microserviceMappingName>Hashicup_plateer_map</microserviceMappingName>
+          <clusterName>Hashicup_plateer</clusterName>
+          <clusterProjectName>Hashicup</clusterProjectName>
+          <microserviceName>Hashicup_plateer</microserviceName>
+          <tierMapName>Hashicup_plateer_map</tierMapName>
+          <tracked>0</tracked>
+        </microserviceMapping>
+      </tierMap>
+    </application>
   </project>
 </exportedData>
